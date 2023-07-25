@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="imagens/EASYTEC.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="imagem">
+    
+</div>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="login.js">
+                    <img src="./imagens/logob.png">
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="number" class="login" required>
+                        <label for="rm">RM:</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" class="senha" required>
+                        <label for="senha">Senha:</label>
+                    </form>
+                    </div>
+                    <div class="datalist">
+                        <label for="funcoes"></label>
+                        <input list="funcoes" class="funcoesescola"  placeholder="Funções que você exerce no instituto..." required>
+                            <datalist id="funcoes">
+                                <option value="Aluno"></option>
+                                <option value="Professor"></option>
+                                <option value="Funcionário"></option>
+                                <option value="Tercerizado"></option>
+                            </datalist><br>
+                    </div>
+                    <div class="esquecer">
+                        <label for="esquecer"><input type="checkbox">Lembrar de mim <div><br><a href="#">Esqueceu a senha</a></div></label>
+                    </div>
+                    <button id="btn">ENTRAR</button>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{ /* formatando tudo */
+    margin: 0;
+    padding: 0;
+    font-family: bd-supper, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+section{ /* formatando a caixa do form e o background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('imagens/pexels-hristo-fidanov-1252890.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.form-box{ /* formatando a caixa do formulário */
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    box-shadow: 0 0 30px rgba(2, 2, 2, 1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+img{ /* formatando a imagem do background */
+    font-size: 2em;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin-top: -60px;
+    margin-bottom: -80px;
+}
+
+.inputbox{ /* formatando os inputs */
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+    
+    
+}
+
+.inputbox label{ /* formatando o label dos inputs */
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label, 
+input:valid ~ label{
+top: -5px;
+} 
+.inputbox input{ /* formatando a caixa do input */
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{ /* formatando os ícones */
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.esquecer{ /* formatando o "esqueceu a senha" e o "lembrar de mim"  */
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.esquecer label input{ /* formatando o label do "esqueceu a senha" e o "lembrar de mim"*/
+    margin-right: 3px;
+}
+.esquecer label a{ /* formatando o link do "esqueceu a senha" */
+    color: #fff;
+    text-decoration: none;
+}
+
+.esquecer label a:hover{ /* formatando o hover(quando o mouse for passado em cima do link) do link do "esqueceu a senha"*/
+    text-decoration: underline;
+}
+
+#btn{
+    position: relative; /* deixa o botão em posição relativa, ou seja, quando eu colocar as propriedades top, left, botton, right ele se moverá de forma q a sua posição atual */
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, #009DAD, #004AAD); /* linear gradient do botão normalmente */
+    color: white;
+}
+button::before{ /* before é um (esqueci o nome) que um pseudo elemento, é como se vc criasse um elemento pelo css, só que todo #btn terá esse pseudo elemento. Ele fica sobreposto ao seu elemento originario (nesse baso é o #btn)*/
+    content: "ENTRAR"; /* conteudo, a gente coloca o mesmo que tá no HTML */
+    position: absolute; /* deixa o botão em posição absoluta ao pai relativo mais proximo, ou seja, quando eu colocar as propriedades top, left, botton, right ele se moverá de acordo com as coordenadas desse pai*/
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    left: 0; /* Vai pra coordena esquerda 0 do #btn (vai pro canto esquedo do #btn)*/
+    top: 0; /* Vai pra coordena cima 0 do #btn (vai pro canto de cima do #btn)*/
+    width: 100%; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
+    height: 40px; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
+    border-radius: 40px; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
+    background: linear-gradient(to left, #01794E, #009DAD, #004AAD);  /* linear gradient que vai ficar sobreposto de tudo*/
+    transition: 1s ;
+}    
+button#btn:hover::before{
+    opacity: 0;  /* Quando o mause passar por cima do #btn o ::before perderá a opcidade ent mostrará a cor verdadeira do #btn*/
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { /* retirando as "setas do RM utilizando o "appearance", ou seja, foi utilizada para exibir um 
+elemento usando o estilo nativo da plataforma com base no tema do sistema operacional.*/
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.funcoesescola{
+    margin: -15px 0 15px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%; 
+
+}
+.funcoes label{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin: -15px 0 15px;
+    font-size: 10px;
+    color: #fff;
+}
