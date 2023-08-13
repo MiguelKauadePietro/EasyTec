@@ -128,25 +128,15 @@ a:hover {
     color: #004e80;
     height: 50px;
     width: 50px;
-  } 
+  }
   /*--- nav responsiva --- */
 
-  footer{
-    position: relative;
-    bottom: 0;
-  }
   .container .card{
     flex-direction: column;
     margin-bottom: 40px;
   }
 }
 /*------------- responsive ---------------*/
-
-footer{
-  position: absolute;
-  bottom: 0;
-
-}
 
 main{
   display: flex;
@@ -194,7 +184,10 @@ main{
 .container card p{
   color: #666;
   transition: 0.5s;
-  height: max-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .card a{
@@ -208,7 +201,7 @@ main{
   text-decoration: none;
   transition: 0.5s;
   outline: none;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .container .card:hover{
@@ -218,20 +211,15 @@ main{
   border: 3px solid #00D186;
   box-shadow: 2px 20px 25px  #006aad;
   scale: 1.1;
-  height: 100%;
+  height: 40vh;
 }
 
 .container .card a:hover{
   background-color: #fff;
   color: #00D186;
   font-weight: bolder;
-  
 }
 
-.container .card #card3 a:hover{
-  width: 100%;
-  margin: 0;
-}
 
 main ion-icon{
   width: 50px;
