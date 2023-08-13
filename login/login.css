@@ -1,164 +1,179 @@
-*{ /* formatando tudo */
-    margin: 0;
-    padding: 0;
-    font-family: bd-supper, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+/** Variables - colors **/
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  /* Purple */
+  --color-purple-50: #7c3aed;
+  --color-purple-100: #a855f7;
+  --color-purple-200: #bf46ef;
+
+  /* Gradient */
+  --color-gradient: linear-gradient(
+    90deg,
+    var(--color-purple-50),
+    var(--color-purple-100),
+    var(--color-purple-200)
+  );
 }
 
-
-section{ /* formatando a caixa do form e o background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background: url('imagens/pexels-hristo-fidanov-1252890.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+/* General */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.form-box{ /* formatando a caixa do formulário */
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: transparent;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255,0.5);
-    box-shadow: 0 0 30px rgba(2, 2, 2, 1);
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gradient);
 }
 
-img{ /* formatando a imagem do background */
-    font-size: 2em;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 300px;
-    margin-top: -60px;
-    margin-bottom: -80px;
+#login_form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--color-light-50);
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  animation: dark-to-light-background 0.3s ease-in-out;
 }
 
-.inputbox{ /* formatando os inputs */
-    position: relative;
-    margin: 30px 0px;
-    width: 310px;
-    border-bottom: 2px solid #fff;
-    
-    
+/* Form Header */
+#form_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.inputbox label{ /* formatando o label dos inputs */
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 1em;
-    pointer-events: none;
-    transition: .5s;
-}
-input:focus ~ label, 
-input:valid ~ label{
-top: -5px;
-} 
-.inputbox input{ /* formatando a caixa do input */
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: #fff;
-}
-.inputbox ion-icon{ /* formatando os ícones */
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    top: 20px;
+#form_header h1 {
+  font-size: 40px;
+  position: relative;
 }
 
-.esquecer{ /* formatando o "esqueceu a senha" e o "lembrar de mim"  */
-    margin: -15px 0 15px;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+#form_header h1::before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: var(--color-purple-50);
+  bottom: 10px;
+  border-radius: 5px;
 }
 
-.esquecer label input{ /* formatando o label do "esqueceu a senha" e o "lembrar de mim"*/
-    margin-right: 3px;
-}
-.esquecer label a{ /* formatando o link do "esqueceu a senha" */
-    color: #fff;
-    text-decoration: none;
+#mode_icon {
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.esquecer label a:hover{ /* formatando o hover(quando o mouse for passado em cima do link) do link do "esqueceu a senha"*/
-    text-decoration: underline;
+/* Inputs */
+#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#btn{
-    position: relative; /* deixa o botão em posição relativa, ou seja, quando eu colocar as propriedades top, left, botton, right ele se moverá de forma q a sua posição atual */
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    background: linear-gradient(to left, #009DAD, #004AAD); /* linear gradient do botão normalmente */
-    color: white;
-}
-button::before{ /* before é um (esqueci o nome) que um pseudo elemento, é como se vc criasse um elemento pelo css, só que todo #btn terá esse pseudo elemento. Ele fica sobreposto ao seu elemento originario (nesse baso é o #btn)*/
-    content: "ENTRAR"; /* conteudo, a gente coloca o mesmo que tá no HTML */
-    position: absolute; /* deixa o botão em posição absoluta ao pai relativo mais proximo, ou seja, quando eu colocar as propriedades top, left, botton, right ele se moverá de acordo com as coordenadas desse pai*/
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    left: 0; /* Vai pra coordena esquerda 0 do #btn (vai pro canto esquedo do #btn)*/
-    top: 0; /* Vai pra coordena cima 0 do #btn (vai pro canto de cima do #btn)*/
-    width: 100%; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
-    height: 40px; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
-    border-radius: 40px; /* a gente coloca o mesmo do #btn pra ele ficar igualzinho a ele*/
-    background: linear-gradient(to left, #01794E, #009DAD, #004AAD);  /* linear gradient que vai ficar sobreposto de tudo*/
-    transition: 1s ;
-}    
-button#btn:hover::before{
-    opacity: 0;  /* Quando o mause passar por cima do #btn o ::before perderá a opcidade ent mostrará a cor verdadeira do #btn*/
+.input-box > label {
+  font-size: 14px;
+  color: var(--color-dark-50);
 }
 
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  border-bottom: 1px solid var(--color-purple-50);
+  cursor: text;
 }
-input[type=number] { /* retirando as "setas do RM utilizando o "appearance", ou seja, foi utilizada para exibir um 
-elemento usando o estilo nativo da plataforma com base no tema do sistema operacional.*/
-   -moz-appearance: textfield;
-   appearance: textfield;
 
+.input-field i {
+  font-size: 18px;
+  cursor: text;
+  color: var(--color-dark-900);
 }
-.funcoesescola{
-    margin: -15px 0 15px;
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    width: 100%; 
 
+.input-field input {
+  border: none;
+  width: 260px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px 5px;
 }
-.funcoes label{
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin: -15px 0 15px;
-    font-size: 10px;
-    color: #fff;
+
+.input-field input:focus {
+  outline: none;
+}
+
+/* Forgot password */
+#forgot_password a {
+  text-decoration: none;
+  color: var(--color-dark-50);
+  font-size: 12px;
+}
+
+#forgot_password a:hover {
+  color: var(--color-purple-50);
+}
+
+/* Login Button */
+#login_button {
+  border: none;
+  background: var(--color-gradient);
+  padding: 7px;
+  border-radius: 3px;
+  color: var(--color-light-50);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark#login_form {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+  color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background {
+  0% {
+    background-color: var(--color-dark-100);
+  }
+  100.0% {
+    background-color: var(--color-light-50);
+  }
+}
+
+@keyframes light-to-dark-background {
+  0% {
+    background-color: var(--color-light-50);
+  }
+  100.0% {
+    background-color: var(--color-dark-100);
+  }
 }

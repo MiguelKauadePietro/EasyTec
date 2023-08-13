@@ -1,53 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
-    <link rel="shortcut icon" href="imagens/EASYTEC.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1q
+    +CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
 </head>
 <body>
-    <div class="imagem">
-    
-</div>
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="login.js">
-                    <img src="./imagens/logob.png">
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="number" class="login" required>
-                        <label for="rm">RM:</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" class="senha" required>
-                        <label for="senha">Senha:</label>
-                    </form>
-                    </div>
-                    <div class="datalist">
-                        <label for="funcoes"></label>
-                        <input list="funcoes" class="funcoesescola"  placeholder="Funções que você exerce no instituto..." required>
-                            <datalist id="funcoes">
-                                <option value="Aluno"></option>
-                                <option value="Professor"></option>
-                                <option value="Funcionário"></option>
-                                <option value="Tercerizado"></option>
-                            </datalist><br>
-                    </div>
-                    <div class="esquecer">
-                        <label for="esquecer"><input type="checkbox">Lembrar de mim <div><br><a href="#">Esqueceu a senha</a></div></label>
-                    </div>
-                    <button id="btn">ENTRAR</button>
+    <main id="container">
+        <form id="login_form">
+
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
-        </div>
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="main.js"></script>
-    
+
+            <div id="inputs">
+                <div id="input-box">
+                    <label for="RM">RM:
+                        <div class="input-field">
+                            <i mode_icon class="fa-solid fa-user"></i>
+                            <input type="password" name="RM" id="RM" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div id="inputs">
+                    <div id="input-box">
+                        <label for="senha">Senha:
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" name="senha" id="senha" required>
+                            </div>
+                        </label>
+                    </div>
+            </div>
+            <button type="submit" id="login_button">Login</button>
+        </form>
+</main>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
