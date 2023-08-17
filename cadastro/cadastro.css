@@ -10,7 +10,7 @@
     --color-dark-100: #312d37;
     --color-dark-900: #000;
 
-    /* Blues and green */
+    /* Purple */
     --color-blue-50: #004AAD;
     --color-blue-100: #006AAD;
     --color-green-200: #00AD6F;
@@ -170,6 +170,6 @@
         background-color:var(--color-light-50);
     }
     100.0% {
-        background-color:var(--color-dark-100); 
+        background-color:var(--color-dark-100);
     }
 }

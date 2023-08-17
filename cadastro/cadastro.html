@@ -7,16 +7,16 @@
     <link rel="shortcut icon" href="imagens/EASYTEC.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastro.css">
     
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 <body>   
     <main id="container">
         <form id="login_form">
             <!-- FORM HEADER -->
             <div id="form_header">
-                <h1>Login</h1>
+                <h1>Cadastro</h1>
                 <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
 
@@ -24,10 +24,19 @@
             <div id="inputs">
                 <!-- EMAIL -->
                 <div class="input-box">
+                    <label for="Nome">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="RM" name="RM" required>
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
                     <label for="RM">
                         RM
                         <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-lock"></i>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" id="RM" name="RM" required>
                         </div>
                     </label>
@@ -38,7 +47,7 @@
                     <label for="password">
                         Senha
                         <div class="input-field">
-                            <i class="fa-solid fa-lock"></i>
+                            <i class="fa-solid fa-key"></i>
                             <input type="password" id="password" name="password" required>
                         </div>
                     </label>
@@ -60,6 +69,6 @@
     </main>
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="cadastro.js"></script>
 </body>
 </html>
