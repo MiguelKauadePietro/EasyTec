@@ -1,16 +1,26 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+    header('Location: login.php');
+    exit();
+}
+
+$usuarioNome = $_SESSION['usuario_nome'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Css/paginainicial.css">
-  <link rel="shortcut icon" href="./imagens/EASYTEC.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../Página inicial/Css/paginainicial.css">
+  <link rel="shortcut icon" href="../../cadastro/imagens/EASYTEC.png" type="image/x-icon">
   <title>Página Inicial</title>
 </head>
 <body>
 <header>
   <nav>
-    <a href="index.html"> <img class="logo" src="./imagens/logob.png"></a>
+    <a href="dashboard.php"> <img class="logo" src="../../Página inicial/imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="index.html">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
@@ -20,6 +30,9 @@
       <li><a href="logout.php">Sair</a></li>
 
   </nav>
+
+  <h2>Bem-vindo, <?php echo $usuarioNome; ?>!</h2>
+    <p>Esta é a Página Inicial</p>
 
   <main>
     <div class="container">
