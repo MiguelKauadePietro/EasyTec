@@ -102,7 +102,7 @@
     font-size: 18px;
     cursor: text;
     color: var(--color-dark-900);
-} 
+}
 
 .input-field input {
     border: none;
@@ -147,13 +147,7 @@
 .dark#login_form {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
-    animation: light-to-dark-background 0.1s ease-in-out;
-}
-
-.dark#login_form .input-field input,
-.dark#login_form .input-field i {
-    color: var(--color-light-50);
-    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
 }
 
 @keyframes dark-to-light-background {
@@ -170,6 +164,12 @@
         background-color:var(--color-light-50);
     }
     100.0% {
-        background-color:var(--color-dark-100); 
+        background-color:var(--color-dark-100);
     }
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+    color: var(--color-light-50);
+    background-color: transparent;
 }

@@ -147,13 +147,13 @@
 .dark#login_form {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
-    animation: light-to-dark-background 0.1s ease-in-out;
+    animation: light-to-dark-background 0.3s ease-in-out;
 }
 
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
-    background-color: var(--color-dark-100);
+    background-color: transparent;
 }
 
 @keyframes dark-to-light-background {

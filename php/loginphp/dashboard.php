@@ -20,7 +20,7 @@ $usuarioNome = $_SESSION['usuario_nome'];
 <body>
 <header>
   <nav>
-    <a href="dashboard.php"> <img class="logo" src="../../Página inicial/imagens/logob.png"></a>
+    <a href="dashboard.php "> <img class="logo" src="../../Página inicial/imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="index.html">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
