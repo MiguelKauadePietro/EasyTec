@@ -2,7 +2,7 @@
 $host = 'localhost';
 $usuario = 'root';
 $senha = '';
-$banco = 'cadastro_db';
+$banco = 'tcc_db';
 
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
 
