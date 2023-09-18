@@ -8,7 +8,7 @@ include_once("conexao.php");
 $stmt = "update tbusuarios set ativo = '$ativo' where email = '$email';";
 
 if(mysqli_query($conn,$stmt)){
-    header("location:telaadministrador1.php");
+    header("location:telaadmin.php");
 }else{
     echo "Erro ao ativar usuário";
 }

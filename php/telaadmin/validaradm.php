@@ -10,7 +10,7 @@ if(isset($_SESSION['usuario'])){
 }
 
 if(isset($erro)){
-    header("location:telalogin.php?erro=".$erro);
+    header("location:login.php?erro=".$erro);
 }
 
 ?>

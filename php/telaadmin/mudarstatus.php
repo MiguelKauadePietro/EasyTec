@@ -9,14 +9,14 @@
 
     if(mysqli_query($conn,$stmt)){
         if($ativo == "s"){
-            header("location:telaadministrador.php");
+            header("location:telaadmin.php");
         }else{
-            header("location:Desativarusuario.php");
+            header("location:desativaruser.php");
         }
-        header("location:telaadministrador.php");
+        header("location:telaadmin.php");
     }else{
         echo "<p>Erro ao ativar usuário</p>";
-        echo "<p><a href = 'telaadministrador.php'>Voltar</a></p>";
+        echo "<p><a href = 'telaadmin.php'>Voltar</a></p>";
     }
 mysqli_Close($conn);
 ?>

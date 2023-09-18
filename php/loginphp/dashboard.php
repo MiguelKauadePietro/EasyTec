@@ -79,23 +79,9 @@ $usuarioNome = $_SESSION['usuario_nome'];
           <p>Veja o horário de funcionamento e quais declarações e documentos importantes é possível adquirir na secretária.</p>
           <a href="#">Ver Informações Secretaria</a>
         </div>
-
       </div>
     </div>
-
-    
- 
   </main>
-  <footer>
-    
-  <!--FOOTER-->
-  <!-- <footer><h4>&copy;Direitos reservados - Etec Sylvio Mattos de Carvalho juntamente com Mandy Bocaletti</h4></footer> -->
-  <!--FOOTER-->
-  
-  </footer>
-
-
-
 
  <!--nav responsiva na parte inferior-->
     <div class="nav-responsive">

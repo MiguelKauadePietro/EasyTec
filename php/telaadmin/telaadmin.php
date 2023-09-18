@@ -32,12 +32,6 @@
                             <a class="nav-link" href="Desativarusuario.php">Desativar Usuários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promover Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rebaixar Administrador</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="logout.php">Sair</a>
                         </li>
                     </ul>
