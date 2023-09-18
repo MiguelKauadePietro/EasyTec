@@ -68,13 +68,13 @@
         while($usuario = mysqli_fetch_assoc($resultado)){
             echo 
         '<tr>
-        <th scope="row">'.$usuario['email'].'</th>
+        <th scope="row">'.$usuario['RM'].'</th>
         <td>'.$usuario['nome'].'</td>
         <td>'.$usuario['tipo'].'</td>
         <td>'.$usuario['ativo'].'</td>
         <td>
-          <a class="btn btn-primary" href="mudarstatus.php?email='.$usuario['email'].'&ativo=s">Ativar</a>
-          <a class="btn btn-danger" href="">Desativar</a>
+          <a class="btn btn-primary" href="mudarstatus.php?email='.$usuario['RM'].'&ativo=s">Ativar</a>
+          <a class="btn btn-danger" href="desativarusers.php">Desativar</a>
       </td>
       </tr>';
 }

@@ -1,6 +1,6 @@
 <?php
 
-$email = $_GET['email'];
+$RM = $_GET['RM'];
 $ativo = $_GET['ativo'];
 
 include_once("conexao.php");
@@ -14,6 +14,5 @@ if(mysqli_query($conn,$stmt)){
 }
 
 mysqli_close($conn);
-
 
 ?>

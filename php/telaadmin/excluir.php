@@ -1,12 +1,12 @@
 <?php
 
-    $iduser = $_GET['id'];
+    $RMuser = $_GET['RM'];
 
     //CONEXÃO COM O BD
     include_once("conexao.php");
 
     //INSTRUÇÃO SQL
-    $stmt = "delte from usuarios where id = '$iduser';";
+    $stmt = "delte from usuarios where id = '$RMuser';";
 
     //EXECUTANDO O COMANDO SQL
     if(mysqli_query($conn, $stmt)){
