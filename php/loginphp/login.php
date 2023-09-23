@@ -41,42 +41,43 @@
                             <input type="password" id="password" name="senha" required>
                         </div>
                     </label>
+                <?php
+                require_once('conexaologin.php');
 
-                    <!-- FORGOT PASSWORD -->
-                    <div id="forgot_password">
-                        <a href="#">
-                            Esqueceu a senha?
-                        </a>
-                    </div>
-                    <?php
-require_once('conexaologin.php');
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    $RM = $_POST['RM'];
+                    $senha = $_POST['senha'];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $RM = $_POST['RM'];
-    $senha = $_POST['senha'];
+                    $sql = "SELECT id, nome, senha FROM usuarios WHERE RM = '$RM'";
+                    $resultado = mysqli_query($conexao, $sql);
 
-    $sql = "SELECT id, nome, senha FROM usuarios WHERE RM = '$RM'";
-    $resultado = mysqli_query($conexao, $sql);
-
-    if ($resultado && mysqli_num_rows($resultado) === 1) {
-        $usuario = mysqli_fetch_assoc($resultado);
-        if (password_verify($senha, $usuario['senha'])) {
-            // Login bem-sucedido
-            session_start();
-            $_SESSION['usuario_id'] = $usuario['id'];
-            $_SESSION['usuario_nome'] = $usuario['nome'];
-            header('Location: dashboard.php');
-            exit();
-        } else {
-            echo "Senha incorreta";
-        }
-    } else {
-        echo "RM não encontrado";
-    }
-}
-?>
+                    if ($resultado && mysqli_num_rows($resultado) === 1) {
+                        $usuario = mysqli_fetch_assoc($resultado);
+                        if (password_verify($senha, $usuario['senha'])) {
+                            // Login bem-sucedido
+                            session_start();
+                            $_SESSION['usuario_id'] = $usuario['id'];
+                            $_SESSION['usuario_nome'] = $usuario['nome'];
+                            header('Location: dashboard.php');
+                            exit();
+                        } else {
+                            echo "Senha incorreta";
+                        }
+                    } else {
+                        echo "RM não encontrado";
+                    }
+                }
+                ?>
                 </div>
             </div>
+
+            <select id="funcao">
+                <option value="a">Aluno</option>
+                <option value="pro">Professor</option>
+                <option value="fun">Funcionário</option>
+                <option value="ter">Terceirizado</option>
+            </select>
+
 
             <!-- LOGIN BUTTON -->
             <button type="submit" id="login_button">

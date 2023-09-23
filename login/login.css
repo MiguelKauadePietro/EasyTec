@@ -173,3 +173,39 @@
     color: var(--color-light-50);
     background-color: transparent;
 }
+
+/* Estilos para o seletor */
+.custom-select {
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para a seta do seletor */
+  .custom-select::after {
+    content: "\f0d7"; /* Ícone de seta para baixo (FontAwesome) */
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Estilos para o seletor real */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 30px 5px 10px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para as opções */
+  option {
+    font-size: 16px;
+  }

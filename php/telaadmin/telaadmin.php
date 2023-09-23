@@ -64,30 +64,29 @@
     $resultado = mysqli_query($conn, $stmt);
 
     //Verificando se from encontrado resultados
-    if(mysqli_num_rows($resultado) > 0){
-        while($usuario = mysqli_fetch_assoc($resultado)){
-            echo 
-        '<tr>
-        <th scope="row">'.$usuario['RM'].'</th>
-        <td>'.$usuario['nome'].'</td>
-        <td>'.$usuario['tipo'].'</td>
-        <td>'.$usuario['ativo'].'</td>
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($usuario = mysqli_fetch_assoc($resultado)) {
+            echo
+                '<tr>
+        <th scope="row">' . $usuario['RM'] . '</th>
+        <td>' . $usuario['nome'] . '</td>
+        <td>' . $usuario['tipo'] . '</td>
+        <td>' . $usuario['ativo'] . '</td>
         <td>
-          <a class="btn btn-primary" href="mudarstatus.php?email='.$usuario['RM'].'&ativo=s">Ativar</a>
+          <a class="btn btn-primary" href="mudarstatus.php?email=' . $usuario['RM'] . '&ativo=s">Ativar</a>
           <a class="btn btn-danger" href="desativarusers.php">Desativar</a>
       </td>
       </tr>';
-}
+        }
 
-    }else{
+    } else {
         echo "<tr><td colspan = '5'>Nenhum usuários inativo encontrado</td></tr>";
     }
 
-    //Fechando o BD 
+    //Fechando o BD
     mysqli_Close($conn);
 
-?>
-    
+    ?>
   </tbody>
 </table>
 

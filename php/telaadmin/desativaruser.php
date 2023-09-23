@@ -64,41 +64,33 @@
     $resultado = mysqli_query($conn, $stmt);
 
     //Verificando se from encontrado resultados
-    if(mysqli_num_rows($resultado) > 0){
-        while($usuario = mysqli_fetch_assoc($resultado)){
-            echo 
-        '<tr>
-        <th scope="row">'.$usuario['email'].'</th>
-        <td>'.$usuario['nome'].'</td>
-        <td>'.$usuario['tipo'].'</td>
-        <td>'.$usuario['ativo'].'</td>
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($usuario = mysqli_fetch_assoc($resultado)) {
+            echo
+                '<tr>
+        <th scope="row">' . $usuario['RM'] . '</th>
+        <td>' . $usuario['nome'] . '</td>
+        <td>' . $usuario['tipo'] . '</td>
+        <td>' . $usuario['ativo'] . '</td>
         <td>
-        <a class="btn btn-danger" href="mudarstatus.php?email='.$usuario['email'].'&ativo=n">Desativar</a>
+        <a class="btn btn-danger" href="mudarstatus.php?email=' . $usuario['RM'] . '&ativo=n">Desativar</a>
 
       </td>
       </tr>';
-}
+        }
 
-    }else{
-        echo "<tr><td colspan = '5'>Nenhum usuários inativo encontrado</td></tr>";
+    } else {
+        echo "<tr><td colspan = '5'>Nenhum usuário inativo encontrado</td></tr>";
     }
 
-    //Fechando o BD 
+    //Fechando o BD
     mysqli_Close($conn);
 
-?>
-    
-  </tbody>
-</table>
-
+    ?>
+</tbody>
+    </table>
         </div>
-
-    </div>
-
-
-
-
-
+            </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

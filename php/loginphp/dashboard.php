@@ -2,8 +2,8 @@
 session_start();
 
 if (!isset($_SESSION['usuario_id'])) {
-    header('Location: login.php');
-    exit();
+  header('Location: login.php');
+  exit();
 }
 
 $usuarioNome = $_SESSION['usuario_nome'];
@@ -131,4 +131,5 @@ $usuarioNome = $_SESSION['usuario_nome'];
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="navbar.js"></script>
 </html>
