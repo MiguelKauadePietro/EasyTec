@@ -24,29 +24,26 @@
                 <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
             <?php
+
+            //requerindo a conexao com o BD
             require_once('conexao.php');
+
 
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $nome = $_POST['nome'];
                 $RM = $_POST['RM'];
                 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
-                // $funcao = $_POST['funcaouser'];
-            
+                
+                //inserindo os campos
                 $sql = "INSERT INTO usuarios (nome, RM, senha) VALUES ('$nome', '$RM', '$senha')";
-
+                
+                //verificando os dados no banco
                 if (mysqli_query($conexao, $sql)) {
                     echo "Cadastro realizado com sucesso!";
 
-                    define('LOGIN_PATH', 'Etec/TCC/EasyTec/php/loginphp/login.php');
-                    header("Location: " . LOGIN_PATH);
+                    //quando o cadastro for realizado, o usuário será encaminhado para a tela de login
+                    echo "<script>window.location.href = 'http://localhost/TCC/EasyTec/php/loginphp/login.php';</script>";
 
-
-                    // $login_url = $_SERVER['DOCUMENT_ROOT'] . '/php/loginphp/login.php';
-                    // header("Location: $login_url");
-
-                    // ob_clean();
-                    // header('Location: ../../../loginphp/login.php');
-                    // exit();
                 } else {
                     echo "Erro ao cadastrar: " . mysqli_error($conexao);
                 }

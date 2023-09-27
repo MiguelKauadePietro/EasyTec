@@ -41,7 +41,7 @@ $usuarioNome = $_SESSION['usuario_nome'];
         <ion-icon name="navigate-outline"></ion-icon>
         <h1>Planta da Escola</h1>
         <div class="content">
-          <p>Todos os espaços da escola sob um único aspecto.
+          <p>Todos os espaços da escola sob um único aspecto. <br><br><br><br><br>
           </p>
           <a href="#">Ver Planta da Escola</a>
         </div>
@@ -53,7 +53,7 @@ $usuarioNome = $_SESSION['usuario_nome'];
         <ion-icon name="time-outline"></ion-icon>
         <h1>Horários</h1>
         <div class="content">
-          <p>Com sua grade curricular sempre em mãos, é mais facil se manter atualizado das mudanças no horário de aulas.</p>
+          <p>Com sua grade curricular sempre em mãos, é mais facil se manter atualizado das mudanças no horário de aulas. <br><br><br></p>
           <a href="#">Ver Horários</a>
         </div>
 
@@ -64,7 +64,7 @@ $usuarioNome = $_SESSION['usuario_nome'];
         <ion-icon name="people-outline"></ion-icon>
         <h1>Contato dos Professores</h1>
         <div class="content">
-          <p>No caso de alguma dúvida repentina relacionada a aula, é possível contatar os professores fora do horario de aula.
+          <p>No caso de alguma dúvida repentina relacionada a aula, é possível contatar os professores fora do horario de aula. <br>
           </p>
           <a href="#">Contate os Professores</a>
         </div>
@@ -76,7 +76,7 @@ $usuarioNome = $_SESSION['usuario_nome'];
         <ion-icon name="information-outline"></ion-icon>
         <h1>Informações Secretaria</h1>
         <div class="content">
-          <p>Veja o horário de funcionamento e quais declarações e documentos importantes é possível adquirir na secretária.</p>
+          <p>Veja o horário de funcionamento e quais declarações e documentos importantes é possível adquirir na secretária. <br></p>
           <a href="#">Ver Informações Secretaria</a>
         </div>
       </div>

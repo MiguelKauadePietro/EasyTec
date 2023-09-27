@@ -66,6 +66,36 @@
                     } else {
                         echo "RM não encontrado";
                     }
+
+                    if (mysqli_num_rows($resultado) > 0) {
+                        $usuario = mysqli_fetch_assoc($resultado);
+                    
+                        //Verificando se o usuários está ativo
+                        if ($usuario['ativo'] == "n") {
+                            $erro = "Usuário Inativo, procure o administrador";
+                        } else if ($usuario['ativo'] == "s") {
+                            if (password_verify($senha, $usuario['senha'])==FALSE) { //Verifica se as senhas não conferem
+                                $erro = "Senha incorreta";
+                            }
+                        }
+                    } else {
+                        $erro = "Usuário não encontrado";
+                    }
+                    
+                    //Verificando se não houveram erros para autenticar o usuário
+                    if (!$erro) {
+                        session_start();
+                        $_SESSION['usuario'] = $usuario['nome'];
+                        if ($usuario['tipo'] == "a") {
+                            $_SESSION['tipo'] = "a";
+                            header("location:telaadmin.php");
+                        } else if ($usuario['tipo'] == "u") {
+                            $_SESSION['tipo'] = "u";
+                            header("location:dashboard.php");
+                        }
+                    }else{
+                        header("location:telalogin.php?erro=".$erro);
+                    }
                 }
                 ?>
                 </div>
@@ -76,6 +106,7 @@
                 <option value="pro">Professor</option>
                 <option value="fun">Funcionário</option>
                 <option value="ter">Terceirizado</option>
+                <option value="adm">Administrador</option>
             </select>
 
 
