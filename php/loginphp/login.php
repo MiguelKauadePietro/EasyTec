@@ -12,6 +12,7 @@
 </head>
 <body>
     <main id="container">
+    <i id="icon_fundo" class="fa-solid fa-moon"></i>
         <form id="login_form" method="post" action="login.php">
             <!-- FORM HEADER -->
             <div id="form_header">

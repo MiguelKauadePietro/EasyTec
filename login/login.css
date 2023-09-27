@@ -13,10 +13,12 @@
     /* Blues and green */
     --color-blue-50: #004AAD;
     --color-blue-100: #006AAD;
-    --color-green-200: #00AD6F;
-
+    --color-green-200: #00AD6F; 
+                                /* Você pode adicionar uma variável de cor, uma cor mais escura para se adptar a paleta*/
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-green-200));
+
+    /* Você pode adicionar uma variável de gradient, agora com a cor que vc adicionou*/
 }
 
 /* General */
@@ -34,6 +36,10 @@
     justify-content: center;
     align-items: center;
     background: var(--color-gradient);
+}
+
+.dark #container{
+    background: var(--color-dark-100);
 }
 
 #login_form {
@@ -166,6 +172,7 @@
     100.0% {
         background-color:var(--color-dark-100);
     }
+    
 }
 
 .dark#login_form .input-field input,
@@ -173,6 +180,11 @@
     color: var(--color-light-50);
     background-color: transparent;
 }
+
+.dark #container{                       /**/
+    background: var(--color-dark-100);
+}
+
 
 /* Estilos para o seletor */
 .custom-select {
