@@ -48,8 +48,8 @@
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $RM = $_POST['RM'];
                     $senha = $_POST['senha'];
-
-                    $sql = "SELECT id, nome, senha FROM usuarios WHERE RM = '$RM'";
+                    $funcao = $_POST['funcao'];
+                    $sql = "SELECT * FROM usuarios WHERE RM = '$RM'";
                     $resultado = mysqli_query($conexao, $sql);
 
                     if ($resultado && mysqli_num_rows($resultado) === 1) {
@@ -59,7 +59,16 @@
                             session_start();
                             $_SESSION['usuario_id'] = $usuario['id'];
                             $_SESSION['usuario_nome'] = $usuario['nome'];
-                            header('Location: dashboard.php');
+                            if ($usuario['funcao']=="adm"){
+                                $_SESSION['funcao'] = "adm";
+                                header("location:../telaadmin/telaadmin.php");
+                            }elseif ($usuario['funcao']=="alu"){
+                                $_SESSION['funcao'] = "alu";
+                                header("location:dashboard.php");
+                            }elseif ($usuario['funcao']=="pro"){
+                                $_SESSION['funcao'] = "pro";
+                                header("location:dashboard.php"); //colocar a página do professor
+                            }
                             exit();
                         } else {
                             echo "Senha incorreta";
@@ -73,7 +82,7 @@
                     
                         //Verificando se o usuários está ativo
                         if ($usuario['ativo'] == "n") {
-                            $erro = "Usuário Inativo, procure o administrador";
+                            $erro = "Usuário Inativo, espere o administrador ativar o seu RM";
                         } else if ($usuario['ativo'] == "s") {
                             if (password_verify($senha, $usuario['senha'])==FALSE) { //Verifica se as senhas não conferem
                                 $erro = "Senha incorreta";
@@ -102,7 +111,7 @@
                 </div>
             </div>
 
-            <select id="funcao">
+            <select id="funcao" name="funcao">
                 <option value="a">Aluno</option>
                 <option value="pro">Professor</option>
                 <option value="fun">Funcionário</option>

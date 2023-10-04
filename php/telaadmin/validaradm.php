@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-if (isset($_SESSION['usuario'])) {
-    if ($_SESSION['tipo'] != "a") {
+if (isset($_SESSION['usuario_id'])) {
+    if ($_SESSION['funcao'] != "adm") {
         $erro = "Você tentou acessar uma área não permitida";
     }
 } else {

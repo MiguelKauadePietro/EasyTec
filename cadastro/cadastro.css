@@ -10,10 +10,18 @@
   --color-dark-100: #312d37;
   --color-dark-900: #000;
 
-  /* Purple */
+  /*Variaveis light*/
   --color-blue-50: #004aad;
   --color-blue-100: #006aad;
   --color-green-200: #00ad6f;
+
+  /*Variaveis dark*/
+  --color-newblue-75: #193465;
+  --color-newblue-60: #25476d;
+  --color-newblue-55: #275c79;
+  --color-newgreen-65: #286469;
+  --color-newgreen-75: #184e52;
+  --color-newgreen-100: #143944;
 
   /* Gradient */
   --color-gradient: linear-gradient(
@@ -21,7 +29,21 @@
     var(--color-blue-50),
     var(--color-blue-100),
     var(--color-green-200)
-  );
+    );
+
+
+    --color-newgradient: linear-gradient(
+      90deg,
+      var(--color-newblue-75),
+      var(--color-newblue-60),
+      var(--color-newblue-55),
+      var(--color-newgreen-65),
+      var(--color-newgreen-75),
+      var(--color-newgreen-100)
+    );
+
+
+
 }
 
 /* General */
@@ -38,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-gradient);
+  background: var(--color-newgradient);
 }
 
 #login_form {
@@ -160,6 +182,8 @@
   color: var(--color-light-50);
   background-color: transparent;
 }
+
+.dark#
 
 @keyframes dark-to-light-background {
   0% {

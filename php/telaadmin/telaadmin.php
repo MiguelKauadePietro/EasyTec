@@ -58,7 +58,7 @@
     include_once("conexao.php");
 
     //Comando SQL para buscar os usuários inativos
-    $stmt = "select * from tbusuarios where ativo = 'n';";
+    $stmt = "select * from usuarios where tipo = 'n';";
 
     //Executando o comando SQL
     $resultado = mysqli_query($conn, $stmt);
@@ -69,11 +69,11 @@
             echo
                 '<tr>
         <th scope="row">' . $usuario['RM'] . '</th>
-        <td>' . $usuario['nome'] . '</td>
+        <td>' . $usuario['Nome'] . '</td>
         <td>' . $usuario['tipo'] . '</td>
-        <td>' . $usuario['ativo'] . '</td>
+        <td>' . $usuario['funcao'] . '</td>
         <td>
-          <a class="btn btn-primary" href="mudarstatus.php?email=' . $usuario['RM'] . '&ativo=s">Ativar</a>
+          <a class="btn btn-primary" href="mudarstatus.php?email=' . $usuario['RM'] . '&tipo=s">Ativar</a>
           <a class="btn btn-danger" href="desativarusers.php">Desativar</a>
       </td>
       </tr>';

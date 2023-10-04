@@ -33,9 +33,10 @@
                 $nome = $_POST['nome'];
                 $RM = $_POST['RM'];
                 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+                $funcao = $_POST['funcao'];
                 
                 //inserindo os campos
-                $sql = "INSERT INTO usuarios (nome, RM, senha) VALUES ('$nome', '$RM', '$senha')";
+                $sql = "INSERT INTO usuarios VALUES (null, '$nome', '$RM', '$senha','n','$funcao')";
                 
                 //verificando os dados no banco
                 if (mysqli_query($conexao, $sql)) {
@@ -83,7 +84,7 @@
                 </div>
             </div>
 
-            <select name="funcaouser">
+            <select name="funcao">
                 <option value="alu">Aluno</option>
                 <option value="pro">Professor</option>
                 <option value="fun">Funcionário</option>
