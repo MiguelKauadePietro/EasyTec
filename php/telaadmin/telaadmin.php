@@ -44,10 +44,10 @@
         <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">E-mail</th>
+      <th scope="col">RM</th>
       <th scope="col">Nome</th>
       <th scope="col">Tipo</th>
-      <th scope="col">Ativo</th>
+      <th scope="col">Função</th>
       <th scope="col">Ativar/Desativar</th>
     </tr>
   </thead>
@@ -74,7 +74,7 @@
         <td>' . $usuario['funcao'] . '</td>
         <td>
           <a class="btn btn-primary" href="mudarstatus.php?email=' . $usuario['RM'] . '&tipo=s">Ativar</a>
-          <a class="btn btn-danger" href="desativarusers.php">Desativar</a>
+          <a class="btn btn-danger" href="desativaruser.php">Desativar</a>
       </td>
       </tr>';
         }

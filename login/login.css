@@ -18,7 +18,17 @@
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-green-200));
 
-    /* Você pode adicionar uma variável de gradient, agora com a cor que vc adicionou*/
+    --color-newgradiente: linear-gradient(
+        90deg,
+        var(--color-newblue-75),
+        var(--color-newblue-60),
+        var(--color-newblue-55),
+        var(--color-newgreen-65),
+        var(--color-newgreen-75),
+        var(--color-newgreen-100)
+      );
+
+
 }
 
 /* General */
@@ -36,6 +46,7 @@
     justify-content: center;
     align-items: center;
     background: var(--color-gradient);
+    animation: dark-to-light-container 0.3 ease-in-out;
 }
 
 .dark #container{
@@ -156,6 +167,7 @@
     animation: light-to-dark-background 0.3s ease-in-out;
 }
 
+/*animação do login_form*/
 @keyframes dark-to-light-background {
     0% {
         background-color:var(--color-dark-100);
@@ -173,6 +185,33 @@
         background-color:var(--color-dark-100);
     }
     
+}
+/*animação do login_form*/
+
+/*animação do container*/
+@keyframes dark-to-light-container {
+    0% {
+        background: var(--color-newgradiente);
+    }
+    100.0% {
+        background:var(--color-gradient);
+    }
+}
+
+@keyframes light-to-dark-container {
+    0% {
+        background:var(--color-gradient);
+    }
+    100.0% {
+        background:var(--color-newgradiente);
+    }
+    
+}
+
+
+.dark#container{
+    background: var(--color-newgradiente);
+    animation: light-to-dark-container 0.3 ease-in-out;
 }
 
 .dark#login_form .input-field input,

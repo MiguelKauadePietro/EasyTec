@@ -58,7 +58,7 @@
                             // Login bem-sucedido
                             session_start();
                             $_SESSION['usuario_id'] = $usuario['id'];
-                            $_SESSION['usuario_nome'] = $usuario['nome'];
+                            $_SESSION['usuario_nome'] = $usuario['Nome'];
                             if ($usuario['funcao']=="adm"){
                                 $_SESSION['funcao'] = "adm";
                                 header("location:../telaadmin/telaadmin.php");

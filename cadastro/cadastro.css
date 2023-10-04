@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
-/** Variables - colors **/
+/** Variaveis - colors **/
 :root {
   /* Light */
   --color-light-50: #f8fafc;
@@ -32,7 +32,7 @@
     );
 
 
-    --color-newgradient: linear-gradient(
+    --color-newgradiente: linear-gradient(
       90deg,
       var(--color-newblue-75),
       var(--color-newblue-60),
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-newgradient);
+  background: var(--color-gradient);
 }
 
 #login_form {
@@ -183,7 +183,6 @@
   background-color: transparent;
 }
 
-.dark#
 
 @keyframes dark-to-light-background {
   0% {

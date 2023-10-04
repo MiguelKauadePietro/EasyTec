@@ -73,7 +73,7 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['ativo'] . '</td>
         <td>
-        <a class="btn btn-danger" href="mudarstatus.php?email=' . $usuario['RM'] . '&ativo=n">Desativar</a>
+        <a class="btn btn-danger" href="mudarstatus.php?email=' . $usuario['RM'] . '&tipo=n">Desativar</a>
 
       </td>
       </tr>';
