@@ -202,6 +202,29 @@
   }
 }
 
+
+@keyframes dark-to-light-container {
+  0% {
+    background-color: var(--color-newgradiente);
+  }
+  100.0%{
+    background-color: var(--color-gradient);
+  }
+}
+
+@keyframes light-to-dark-container {
+  0% {
+    background-color: var(--color-gradient);
+  }
+  100.0% {
+    background-color: var(--color-newgradiente);
+  }
+}
+
+.dark#container{
+  animation: light-to-dark-container 0.3s ease-in-out;
+}
+
 /* Estilos para o seletor */
 .custom-select {
   position: relative;
@@ -236,4 +259,9 @@ select {
 /* Estilos para as opções */
 option {
   font-size: 16px;
+}
+
+#mode_icone2{
+  cursor: pointer;
+  font-size: 20px;
 }

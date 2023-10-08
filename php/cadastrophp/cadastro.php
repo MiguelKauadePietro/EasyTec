@@ -17,6 +17,7 @@
 
 <body>
     <main id="container">
+    <i id="mode_icone2" class="fa-solid fa-moon"></i>
         <form id="login_form" method="post" action="cadastro.php">
             <!-- FORM HEADER -->
             <div id="form_header">
@@ -99,7 +100,7 @@
     </main>
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="../../cadastro/cadastro.js"></script>
+    <script type="text/javascript" src="cadastro.js"></script>
 </body>
 
 </html>
