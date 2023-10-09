@@ -129,13 +129,36 @@ a:hover {
     height: 50px;
     width: 50px;
   }
+
+  .foco {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: #000000;
+  }
+  .foco a ion-icon,
+  h1 {
+    color: #000000;
+  }
+
+  .container_conta {
+    display: none;
+  }
+
+  .infodrop {
+    display: none;
+  }
+
+  .show {
+    display: none;
+  }
+}
   /*--- nav responsiva --- */
 
   .container .card{
     flex-direction: column;
     margin-bottom: 40px;
   }
-}
+
 /*------------- responsive ---------------*/
 
 main{

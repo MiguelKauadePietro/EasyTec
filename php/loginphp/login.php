@@ -90,7 +90,7 @@
                         }
                     } else {
                         $erro = "Usuário não encontrado";
-                    }
+                    
                     
                     //Verificando se não houveram erros para autenticar o usuário
                     if (!$erro) {
@@ -104,12 +104,13 @@
                             header("location:dashboard.php");
                         }
                     }else{
-                        header("location:telalogin.php?erro=".$erro);
+                        header("location:login.php?erro=".$erro);
                     }
+                }
                 }
                 ?>
                 </div>
-                <a href="../cadastrophp/cadastro.php">Não tem uma conta?</a>
+                <a href="../cadastrophp/index.php">Não tem uma conta?</a>
             </div>
 
             <select id="funcao" name="funcao">

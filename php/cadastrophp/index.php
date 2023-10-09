@@ -18,7 +18,7 @@
 <body>
     <main id="container">
     <i id="mode_icone2" class="fa-solid fa-moon"></i>
-        <form id="login_form" method="post" action="cadastro.php">
+        <form id="login_form" method="post" action="index.php">
             <!-- FORM HEADER -->
             <div id="form_header">
                 <h1>Cadastro</h1>
@@ -59,7 +59,7 @@
                         Nome
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="nome" required>
+                            <input type="text" name="Nome" required>
                         </div>
                     </label>
                 </div>
@@ -83,7 +83,12 @@
                         </div>
                     </label>
                 </div>
+
+                <a href="../loginphp/login.php">Já possui uma conta?</a>
+
             </div>
+
+            
 
             <select name="funcao">
                 <option value="alu">Aluno</option>
@@ -91,6 +96,8 @@
                 <option value="fun">Funcionário</option>
                 <option value="ter">Terceirizado</option>
             </select>
+
+            
 
             <!-- LOGIN BUTTON -->
             <button type="submit" id="login_button">

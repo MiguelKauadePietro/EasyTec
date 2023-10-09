@@ -183,6 +183,13 @@
   background-color: transparent;
 }
 
+#login_form a{
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  color: var(--color-blue-100);
+}
+
 
 @keyframes dark-to-light-background {
   0% {
