@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
   exit();
 }
 
-$usuarioNome = $_SESSION['usuario_nome'];
+$usuarioNome = $_SESSION['usuario_Nome'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

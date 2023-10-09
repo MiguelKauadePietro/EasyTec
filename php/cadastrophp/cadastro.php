@@ -31,7 +31,7 @@
 
 
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $nome = $_POST['nome'];
+                $nome = $_POST['Nome'];
                 $RM = $_POST['RM'];
                 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
                 $funcao = $_POST['funcao'];
@@ -44,7 +44,7 @@
                     echo "Cadastro realizado com sucesso!";
 
                     //quando o cadastro for realizado, o usuário será encaminhado para a tela de login
-                    echo "<script>window.location.href = 'http://localhost/TCC/EasyTec/php/loginphp/login.php';</script>";
+                    echo "<script>window.location.href = 'http://localhost/Etec/TCC/EasyTec/php/loginphp/login.php';</script>";
 
                 } else {
                     echo "Erro ao cadastrar: " . mysqli_error($conexao);

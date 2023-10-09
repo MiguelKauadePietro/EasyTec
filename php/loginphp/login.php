@@ -58,7 +58,7 @@
                             // Login bem-sucedido
                             session_start();
                             $_SESSION['usuario_id'] = $usuario['id'];
-                            $_SESSION['usuario_nome'] = $usuario['Nome'];
+                            $_SESSION['usuario_Nome'] = $usuario['nome'];
                             if ($usuario['funcao']=="adm"){
                                 $_SESSION['funcao'] = "adm";
                                 header("location:../telaadmin/telaadmin.php");
@@ -81,9 +81,9 @@
                         $usuario = mysqli_fetch_assoc($resultado);
                     
                         //Verificando se o usuários está ativo
-                        if ($usuario['ativo'] == "n") {
+                        if ($usuario['tipo'] == "n") {
                             $erro = "Usuário Inativo, espere o administrador ativar o seu RM";
-                        } else if ($usuario['ativo'] == "s") {
+                        } else if ($usuario['tipo'] == "s") {
                             if (password_verify($senha, $usuario['senha'])==FALSE) { //Verifica se as senhas não conferem
                                 $erro = "Senha incorreta";
                             }
@@ -96,11 +96,11 @@
                     if (!$erro) {
                         session_start();
                         $_SESSION['usuario'] = $usuario['nome'];
-                        if ($usuario['tipo'] == "a") {
-                            $_SESSION['tipo'] = "a";
+                        if ($usuario['funcao'] == "adm") {
+                            $_SESSION['funcao'] = "adm";
                             header("location:telaadmin.php");
-                        } else if ($usuario['tipo'] == "u") {
-                            $_SESSION['tipo'] = "u";
+                        } else if ($usuario['funcao'] == "alu") {
+                            $_SESSION['funcao'] = "alu";
                             header("location:dashboard.php");
                         }
                     }else{
@@ -109,6 +109,7 @@
                 }
                 ?>
                 </div>
+                <a href="../cadastrophp/cadastro.php">Não tem uma conta?</a>
             </div>
 
             <select id="funcao" name="funcao">
@@ -128,6 +129,6 @@
     </main>
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src=".../../../../login/login.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
