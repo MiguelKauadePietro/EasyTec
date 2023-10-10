@@ -84,9 +84,8 @@ $usuarionome = $_SESSION['usuario_Nome'];
   </main>
 
  <!--nav responsiva na parte inferior-->
-    <div class="nav-responsive">
-      
-      <div class="navicones foco">
+  <div class="navbar">
+  <div class="navicones foco">
         <a href="dashboard.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
@@ -121,9 +120,9 @@ $usuarionome = $_SESSION['usuario_Nome'];
           <h1>Sair</h1>
         </a>
       </div>
-       <!--nav responsiva na parte inferior-->
-
     </div>
+      </div>
+    <!--nav responsiva na parte inferior-->
 </header>
 
 
