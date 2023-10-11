@@ -75,6 +75,10 @@
   animation: dark-to-light-background 0.3s ease-in-out;
 }
 
+.dark#login_form #linkcadastro a{
+  color: var(--color-green-200);
+}
+
 /* Form Header */
 #form_header {
   display: flex;
@@ -177,9 +181,7 @@
   animation: light-to-dark-background 0.3s ease-in-out;
 }
 
-.dark#login_form a{
-  color: var(--color-green-200);
-}
+
 
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {

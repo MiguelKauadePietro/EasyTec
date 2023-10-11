@@ -46,12 +46,8 @@
     justify-content: center;
     align-items: center;
     background: var(--color-gradient);
-    animation: dark-to-light-container 0.3 ease-in-out;
 }
 
-.dark #container{
-    background: var(--color-dark-100);
-}
 
 #login_form {
     display: flex;
@@ -200,7 +196,7 @@
 /*animação do login_form*/
 
 /*animação do container*/
-@keyframes dark-to-light-container {
+/* @keyframes dark-to-light-container {
     0% {
         background: var(--color-newgradiente);
     }
@@ -222,19 +218,14 @@
 
 .dark#container{
     background: var(--color-newgradiente);
-    animation: light-to-dark-container 0.3 ease-in-out;
-}
+    animation: light-to-dark-container 0.3s ease-in-out;
+} */
 
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
     background-color: transparent;
 }
-
-.dark #container{                       /**/
-    background: var(--color-dark-100);
-}
-
 
 /* Estilos para o seletor */
 .custom-select {

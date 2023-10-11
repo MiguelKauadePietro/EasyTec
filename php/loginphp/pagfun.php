@@ -23,6 +23,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
     <a href="dashboard.php "> <img class="logo" src="../../Página inicial/imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
+      <li><a class="PE" href="#">Planta da Escola</a></li>
       <li><a class="HR" href="#">Horários</a></li>
       <li><a class="CP" href="#">Contato dos Professores</a></li>
       <li><a class="IS" href="#">Informações da Secretaria</a></li>
@@ -35,6 +36,18 @@ $usuarionome = $_SESSION['usuario_Nome'];
 
   <main>
     <div class="container">
+      <!--Primeiro Card-->
+      <div class="card" id="card1">
+        <ion-icon name="navigate-outline"></ion-icon>
+        <h1>Planta da Escola</h1>
+        <div class="content">
+          <p>Todos os espaços da escola sob um único aspecto. <br><br><br><br><br>
+          </p>
+          <a href="#">Ver Planta da Escola</a>
+        </div>
+
+      </div>
+
       <!--Segundo Card-->
       <div class="card" id="card2">
         <ion-icon name="time-outline"></ion-icon>
@@ -79,20 +92,14 @@ $usuarionome = $_SESSION['usuario_Nome'];
       </div>
 
       <div class="navicones">
+        <a href="#"><ion-icon name="navigate-outline"></ion-icon>
+          <h1>Planta</h1>
+        </a>
+      </div>
+
+      <div class="navicones">
         <a href="#"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
-        </a>
-      </div>
-
-      <div class="navicones">
-        <a href="#"><ion-icon name="people-outline"></ion-icon>
-          <h1>Contat</h1>
-        </a>
-      </div>
-
-      <div class="navicones">
-        <a href="#"><ion-icon name="information-outline"></ion-icon>
-          <h1>Info</h1>
         </a>
       </div>
 

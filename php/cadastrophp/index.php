@@ -17,7 +17,7 @@
 
 <body>
     <main id="container">
-    <i id="mode_icone2" class="fa-solid fa-moon"></i>
+    <!-- <i id="mode_icone2" class="fa-solid fa-moon"></i> -->
         <form id="login_form" method="post" action="index.php">
             <!-- FORM HEADER -->
             <div id="form_header">
@@ -84,7 +84,7 @@
                     </label>
                 </div>
 
-                <a href="../loginphp/login.php">Já possui uma conta?</a>
+                <a id="linkcadastro" href="../loginphp/login.php">Já possui uma conta?</a>
 
             </div>
 

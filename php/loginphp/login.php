@@ -12,7 +12,7 @@
 </head>
 <body>
     <main id="container">
-    <i id="icon_fundo" class="fa-solid fa-moon"></i>
+    <!-- <i id="mode_icone2" class="fa-solid fa-moon"></i> -->
         <form id="login_form" method="post" action="login.php">
             <!-- FORM HEADER -->
             <div id="form_header">
@@ -59,15 +59,21 @@
                             session_start();
                             $_SESSION['usuario_id'] = $usuario['id'];
                             $_SESSION['usuario_Nome'] = $usuario['nome'];
-                            if ($usuario['funcao']=="adm"){
+                            if ($usuario['funcao'] == "adm") {
                                 $_SESSION['funcao'] = "adm";
                                 header("location:../telaadmin/telaadmin.php");
-                            }elseif ($usuario['funcao']=="alu"){
+                            } elseif ($usuario['funcao'] == "alu") {
                                 $_SESSION['funcao'] = "alu";
                                 header("location:dashboard.php");
-                            }elseif ($usuario['funcao']=="pro"){
+                            } elseif ($usuario['funcao'] == "pro") {
                                 $_SESSION['funcao'] = "pro";
-                                header("location:dashboard.php"); //colocar a página do professor
+                                header("location:pagprof.php"); //colocar a página do professor
+                            } elseif ($usuario['funcao'] == "fun") {
+                                $_SESSION['funcao'] = "fun";
+                                header("location:pagfun.php");
+                            } elseif ($usuario['funcao'] == "ter") {
+                                $_SESSION['funcao'] = "ter";
+                                header("location:pagter.php");
                             }
                             exit();
                         } else {
@@ -79,34 +85,34 @@
 
                     if (mysqli_num_rows($resultado) > 0) {
                         $usuario = mysqli_fetch_assoc($resultado);
-                    
+
                         //Verificando se o usuários está ativo
                         if ($usuario['tipo'] == "n") {
                             $erro = "Usuário Inativo, espere o administrador ativar o seu RM";
                         } else if ($usuario['tipo'] == "s") {
-                            if (password_verify($senha, $usuario['senha'])==FALSE) { //Verifica se as senhas não conferem
+                            if (password_verify($senha, $usuario['senha']) == FALSE) { //Verifica se as senhas não conferem
                                 $erro = "Senha incorreta";
                             }
                         }
                     } else {
                         $erro = "Usuário não encontrado";
-                    
-                    
-                    //Verificando se não houveram erros para autenticar o usuário
-                    if (!$erro) {
-                        session_start();
-                        $_SESSION['usuario'] = $usuario['nome'];
-                        if ($usuario['funcao'] == "adm") {
-                            $_SESSION['funcao'] = "adm";
-                            header("location:telaadmin.php");
-                        } else if ($usuario['funcao'] == "alu") {
-                            $_SESSION['funcao'] = "alu";
-                            header("location:dashboard.php");
+
+
+                        //Verificando se não houveram erros para autenticar o usuário
+                        if (!$erro) {
+                            session_start();
+                            $_SESSION['usuario'] = $usuario['nome'];
+                            if ($usuario['funcao'] == "adm") {
+                                $_SESSION['funcao'] = "adm";
+                                header("location:telaadmin.php");
+                            } else if ($usuario['funcao'] == "alu") {
+                                $_SESSION['funcao'] = "alu";
+                                header("location:dashboard.php");
+                            }
+                        } else {
+                            header("location:login.php?erro=" . $erro);
                         }
-                    }else{
-                        header("location:login.php?erro=".$erro);
                     }
-                }
                 }
                 ?>
                 </div>

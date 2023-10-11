@@ -1,7 +1,7 @@
 <?php
 
 $RM = $_GET['RM'];
-$ativo = $_GET['ativo'];
+$ativo = $_GET['tipo'];
 
 include_once("conexao.php");
 

@@ -44,10 +44,10 @@
         <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">E-mail</th>
+      <th scope="col">RM</th>
       <th scope="col">Nome</th>
       <th scope="col">Tipo</th>
-      <th scope="col">Ativo</th>
+      <th scope="col">Função</th>
       <th scope="col">Ativar/Desativar</th>
     </tr>
   </thead>
