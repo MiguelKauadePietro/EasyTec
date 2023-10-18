@@ -14,7 +14,15 @@
     --color-blue-50: #004AAD;
     --color-blue-100: #006AAD;
     --color-green-200: #00AD6F; 
-                                /* Você pode adicionar uma variável de cor, uma cor mais escura para se adptar a paleta*/
+    
+      /*Variaveis dark*/
+  --color-newblue-75: #193465;
+  --color-newblue-60: #25476d;
+  --color-newblue-55: #275c79;
+  --color-newgreen-65: #286469;
+  --color-newgreen-75: #184e52;
+  --color-newgreen-100: #143944;
+
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-green-200));
 
@@ -191,7 +199,7 @@
     100.0% {
         background-color:var(--color-dark-100);
     }
-    
+
 }
 /*animação do login_form*/
 
@@ -212,7 +220,7 @@
     100.0% {
         background:var(--color-newgradiente);
     }
-    
+
 }
 
 

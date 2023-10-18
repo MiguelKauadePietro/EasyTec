@@ -1,11 +1,11 @@
 <?php
 
 $RM = $_GET['RM'];
-$ativo = $_GET['ativo'];
+$ativo = $_GET['tipo'];
 
 include_once("conexao.php");
 
-$stmt = "update usuarios set ativo = '$ativo' where RM = '$RM';";
+$stmt = "update usuarios set tipo = '$ativo' where RM = '$RM';";
 
 if (mysqli_query($conn, $stmt)) {
     header("location:telaadmin.php");

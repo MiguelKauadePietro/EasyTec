@@ -74,7 +74,7 @@ a:hover {
   border-radius: 22px;
 }
 
-.nav-responsive {
+.navbar .navicones{
   display: none;
 }
 /*------------- responsive ---------------*/
@@ -84,7 +84,7 @@ a:hover {
     padding-left: 50px;
   }
 
-  ul{
+  ul li a{ 
         display: none;
 }
 
@@ -140,14 +140,14 @@ a:hover {
     border-radius: 5px; /* Adiciona um pouco de borda arredondada */
     padding: 5px 10px; /* Espaçamento interno para melhor visualização */
 }
-}
+
   /*--- nav responsiva --- */
 
   .container .card{
     flex-direction: column;
     margin-bottom: 40px;
   }
-
+}
 /*------------- responsive ---------------*/
 
 main{

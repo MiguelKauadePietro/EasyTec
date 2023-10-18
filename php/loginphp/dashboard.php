@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
   exit();
 }
 
-$usuarionome = $_SESSION['usuario_Nome'];
+$usuarioNome = $_SESSION['usuario_Nome'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,7 +31,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
 
   </nav>
 
-  <h2>Bem-vindo, <?php echo $usuarionome; ?>!</h2>
+  <h2>Bem-vindo, <?php echo $usuarioNome; ?>!</h2>
     <p>Esta é a Página Inicial</p>
 
   <main>

@@ -26,10 +26,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="telaadministrador.php">Ativar Usuários</a>
+                            <a class="nav-link " aria-current="page" href="telaadmin.php">Ativar Usuários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="Desativarusuario.php">Desativar Usuários</a>
+                            <a class="nav-link active" href="desativaruser.php">Desativar Usuários</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logout.php">Sair</a>
@@ -73,7 +73,7 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['ativo'] . '</td>
         <td>
-        <a class="btn btn-danger" href="mudarstatus.php?email=' . $usuario['RM'] . '&tipo=n">Desativar</a>
+        <a class="btn btn-danger" href="mudarstatus.php?RM=' . $usuario['RM'].'&tipo=n">Desativar</a>
 
       </td>
       </tr>';
@@ -84,7 +84,8 @@
     }
 
     //Fechando o BD
-    mysqli_Close($conn);
+    mysqli_close($conn);
+
 
     ?>
 </tbody>
