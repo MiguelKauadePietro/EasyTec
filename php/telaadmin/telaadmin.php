@@ -30,7 +30,10 @@
                             <a class="nav-link active" aria-current="page" href="telaadmin.php">Ativar Usuários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="desativaruser.php">Desativar Usuários</a>
+                            <a class="nav-link" href="telaadmin1.php">Desativar Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="telaadmin2.php">Promover Admin</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logoutadm.php">Sair</a>
@@ -75,7 +78,7 @@
         <td>' . $usuario['funcao'] . '</td>
         <td>
           <a class="btn btn-primary" href="mudarstatus.php?RM=' . $usuario['RM'] . '&tipo=s">Ativar</a>
-          <a class="btn btn-danger" href="desativaruser.php">Desativar</a>
+       
       </td>
       </tr>';
         }

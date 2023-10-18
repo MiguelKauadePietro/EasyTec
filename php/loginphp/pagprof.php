@@ -13,14 +13,14 @@ $usuarionome = $_SESSION['usuario_Nome'];
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../Página inicial/Css/paginainicial.css">
-  <link rel="shortcut icon" href="../../cadastro/imagens/EASYTEC.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../CSS/paginainicial.css">
+  <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
   <title>Página Inicial</title>
 </head>
 <body>
 <header>
   <nav>
-    <a href="dashboard.php "> <img class="logo" src="../../Página inicial/imagens/logob.png"></a>
+    <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="HR" href="#">Horários</a></li>

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+/** Variaveis - colors **/
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  /*Variaveis light*/
+  --color-blue-50: #004aad;
+  --color-blue-100: #006aad;
+  --color-green-200: #00ad6f;
+
+  /*Variaveis dark*/
+  --color-newblue-75: #193465;
+  --color-newblue-60: #25476d;
+  --color-newblue-55: #275c79;
+  --color-newgreen-65: #286469;
+  --color-newgreen-75: #184e52;
+  --color-newgreen-100: #143944;
+
+  /* Gradient */
+  --color-gradient: linear-gradient(
+    90deg,
+    var(--color-blue-50),
+    var(--color-blue-100),
+    var(--color-green-200)
+    );
+
+
+    --color-newgradiente: linear-gradient(
+      90deg,
+      var(--color-newblue-75),
+      var(--color-newblue-60),
+      var(--color-newblue-55),
+      var(--color-newgreen-65),
+      var(--color-newgreen-75),
+      var(--color-newgreen-100)
+    );
+
+
+
+}
+
+/* General */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gradient);
+}
+
+#login_form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--color-light-50);
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+.dark#login_form #linkcadastro a{
+  color: var(--color-green-200);
+}
+
+/* Form Header */
+#form_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#form_header h1 {
+  font-size: 40px;
+  position: relative;
+}
+
+#form_header h1::before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: var(--color-blue-50);
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+#mode_icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Inputs */
+#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box > label {
+  font-size: 14px;
+  color: var(--color-dark-50);
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  border-bottom: 1px solid var(--color-blue-50);
+  cursor: text;
+}
+
+.input-field i {
+  font-size: 18px;
+  cursor: text;
+  color: var(--color-dark-900);
+}
+
+.input-field input {
+  border: none;
+  width: 260px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+/* Forgot password */
+#forgot_password a {
+  text-decoration: none;
+  color: var(--color-dark-50);
+  font-size: 12px;
+}
+
+#forgot_password a:hover {
+  color: var(--color-blue-50);
+}
+
+/* Login Button */
+#login_button {
+  border: none;
+  background: var(--color-gradient);
+  padding: 7px;
+  border-radius: 3px;
+  color: var(--color-light-50);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark#login_form {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+  color: var(--color-light-50);
+  background-color: transparent;
+}
+
+#login_form a{
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  color: var(--color-blue-100);
+}
+
+
+@keyframes dark-to-light-background {
+  0% {
+    background-color: var(--color-dark-100);
+  }
+  100.0% {
+    background-color: var(--color-light-50);
+  }
+}
+
+@keyframes light-to-dark-background {
+  0% {
+    background-color: var(--color-light-50);
+  }
+  100.0% {
+    background-color: var(--color-dark-100);
+  }
+}
+
+
+@keyframes dark-to-light-container {
+  0% {
+    background-color: var(--color-newgradiente);
+  }
+  100.0%{
+    background-color: var(--color-gradient);
+  }
+}
+
+@keyframes light-to-dark-container {
+  0% {
+    background-color: var(--color-gradient);
+  }
+  100.0% {
+    background-color: var(--color-newgradiente);
+  }
+}
+
+.dark#container{
+  animation: light-to-dark-container 0.3s ease-in-out;
+}
+
+/* Estilos para o seletor */
+.custom-select {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para a seta do seletor */
+.custom-select::after {
+  content: "\f0d7"; /* Ícone de seta para baixo (FontAwesome) */
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Estilos para o seletor real */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 30px 5px 10px;
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para as opções */
+option {
+  font-size: 16px;
+}
+
+#mode_icone2{
+  cursor: pointer;
+  font-size: 20px;
+}
