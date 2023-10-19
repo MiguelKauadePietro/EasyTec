@@ -24,9 +24,9 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
-      <li><a class="HR" href="#">Horários</a></li>
+      <li><a class="HR" href="horarios.php">Horários</a></li>
       <li><a class="CP" href="#">Contato dos Professores</a></li>
-      <li><a class="IS" href="#">Informações da Secretaria</a></li>
+      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 
   </nav>
@@ -52,7 +52,7 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
         <h1>Horários</h1>
         <div class="content">
           <p>Com sua grade curricular sempre em mãos, é mais facil se manter atualizado das mudanças no horário de aulas. <br><br><br></p>
-          <a href="#">Ver Horários</a>
+          <a href="horarios.php">Ver Horários</a>
         </div>
 
       </div>
@@ -75,7 +75,7 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
         <h1>Informações Secretaria</h1>
         <div class="content">
           <p>Veja o horário de funcionamento e quais declarações e documentos importantes é possível adquirir na secretária. <br></p>
-          <a href="#">Ver Informações Secretaria</a>
+          <a href="infosecretaria.php">Ver Informações Secretaria</a>
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
       </div>
 
       <div class="navicones">
-        <a href="#"><ion-icon name="time-outline"></ion-icon>
+        <a href="horarios.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>
@@ -108,7 +108,7 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
       </div>
 
       <div class="navicones">
-        <a href="#"><ion-icon name="information-outline"></ion-icon>
+        <a href="infosecretaria.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>
@@ -123,8 +123,9 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
     <!--nav responsiva na parte inferior-->
 </header>
 
-
-
+    <footer>
+        &copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
+    </footer>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

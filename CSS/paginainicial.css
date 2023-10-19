@@ -1,27 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  /* Blues and green */
+  --color-blue-50: #004AAD;
+  --color-blue-100: #006AAD;
+  --color-green-200: #00AD6F;
+  
+    /*Variaveis dark*/
+--color-newblue-75: #193465;
+--color-newblue-60: #25476d;
+--color-newblue-55: #275c79;
+--color-newgreen-65: #286469;
+--color-newgreen-75: #184e52;
+--color-newgreen-100: #143944;
+
+--color-newgradiente: linear-gradient(
+  90deg,
+  var(--color-newblue-60),
+  var(--color-newblue-55),
+  var(--color-newgreen-65),
+
+);
+}
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-newblue-55);
 
 }
 
 h2{
   margin-left: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: var(--color-green-200);
 
 }
 
 nav {
-  background: #006aad;
+  background: var(--color-blue-100);
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 ul {
@@ -31,10 +70,19 @@ ul {
 }
 
 .logo {
-  padding-left: 35px;
-  width: 215px;
-  height: 50px;
-  margin-top: 15px;
+  width: 200px;
+  height: 170px;
+  position: absolute;
+  top: -40px;
+  left: 45px;
+}
+
+.logo:hover{
+  background-color: var(--color-newblue-60);
+  top: -40px;
+  position: unset;
+  height: 170px;
+
 }
 nav ul {
   float: right;
@@ -64,21 +112,6 @@ a:hover {
   transition: 0.5s;
 }
 
-.mobile-menu {
-  cursor: pointer;
-  margin-top: 15px;
-  margin-right: 15px;
-  display: none;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 4px;
-  background: #fff;
-  margin: 8px;
-  border-radius: 22px;
-}
-
 .navbar .navicones{
   display: none;
 }
@@ -95,56 +128,37 @@ a:hover {
 
         /*--- nav responsiva --- */
 
-  .navicones{
-    color: #fff;
-  }
-
-
-  .navicones a{
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-  }
-
-  .navicones a h1{
-    font-size: 15px;
-    display: flex;
-  }
-  .navbar {
-    background-color: #333; /* Cor de fundo da navbar */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar li {
-    margin: 10px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white; /* Cor do texto dos links */
-    font-weight: bold;
-}
-
-/* Estilo para o link ativo */
-.navbar a.active {
-    background-color: #555; /* Cor de fundo para o link ativo */
-    border-radius: 5px; /* Adiciona um pouco de borda arredondada */
-    padding: 5px 10px; /* Espaçamento interno para melhor visualização */
-}
+        .navbar {
+          background-color: #333; /* Cor de fundo da navbar */
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+      
+      .navbar ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+      }
+      
+      .navbar li {
+          margin: 10px;
+      }
+      
+      .navbar a {
+          text-decoration: none;
+          color: white; /* Cor do texto dos links */
+          font-weight: bold;
+      }
+      
+      /* Estilo para o link ativo */
+      .navbar a.active {
+          background-color: #555; /* Cor de fundo para o link ativo */
+          border-radius: 5px; /* Adiciona um pouco de borda arredondada */
+          padding: 5px 10px; /* Espaçamento interno para melhor visualização */
+      }
 
   /*--- nav responsiva --- */
 
@@ -177,9 +191,9 @@ main{
 
 .container .card{
   position: relative;
-  padding: -100px;
+  padding: -200px;
   width: 300px;
-  height: 350px;
+  height: 390px;
   background-color: #fff;
   margin: 20px;
   border: 3px solid  #8FD3F7;
@@ -194,7 +208,7 @@ main{
 }
 
 .container .card .content{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -241,4 +255,11 @@ main{
 main ion-icon{
   width: 50px;
   height: 50px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }

@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+  header('Location: login.php');
+  exit();
+}
+
+$usuarioNome = $_SESSION['usuario_Nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -64,10 +75,10 @@
       </div>
     <!--nav responsiva na parte inferior-->
 </header>
-
-
-
 </body>
+<footer>
+&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
+</footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="navbar.js"></script>
