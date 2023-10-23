@@ -75,7 +75,7 @@
   animation: dark-to-light-background 0.3s ease-in-out;
 }
 
-.dark#login_form #linkcadastro a{
+.dark#login_form a{
   color: var(--color-green-200);
 }
 

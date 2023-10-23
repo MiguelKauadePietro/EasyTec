@@ -201,33 +201,7 @@
     }
 
 }
-/*animação do login_form*/
 
-/*animação do container*/
-/* @keyframes dark-to-light-container {
-    0% {
-        background: var(--color-newgradiente);
-    }
-    100.0% {
-        background:var(--color-gradient);
-    }
-}
-
-@keyframes light-to-dark-container {
-    0% {
-        background:var(--color-gradient);
-    }
-    100.0% {
-        background:var(--color-newgradiente);
-    }
-
-}
-
-
-.dark#container{
-    background: var(--color-newgradiente);
-    animation: light-to-dark-container 0.3s ease-in-out;
-} */
 
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
@@ -269,9 +243,4 @@
   /* Estilos para as opções */
   option {
     font-size: 16px;
-  }
-
-  #mode_icone2{
-    cursor: pointer;
-    font-size: 20px;
   }
