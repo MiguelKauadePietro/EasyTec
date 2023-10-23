@@ -23,15 +23,14 @@ $usuarionome = $_SESSION['usuario_Nome'];
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
-      <li><a class="HR" href="#">Horários</a></li>
+      <li><a class="HR" href="horarios.php">Horários</a></li>
       <li><a class="CP" href="#">Contato dos Professores</a></li>
-      <li><a class="IS" href="#">Informações da Secretaria</a></li>
+      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 
   </nav>
 
   <h2>Bem-vindo, <?php echo $usuarionome; ?>!</h2>
-    <p>Esta é a Página Inicial</p>
 
   <main>
     <div class="container">
@@ -64,7 +63,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
         <h1>Informações Secretaria</h1>
         <div class="content">
           <p>Veja o horário de funcionamento e quais declarações e documentos importantes é possível adquirir na secretária. <br></p>
-          <a href="#">Ver Informações Secretaria</a>
+          <a href="infosecretaria.php">Ver Informações Secretaria</a>
         </div>
       </div>
     </div>
@@ -91,7 +90,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
       </div>
 
       <div class="navicones">
-        <a href="#"><ion-icon name="information-outline"></ion-icon>
+        <a href="infosecretaria.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>

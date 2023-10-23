@@ -42,7 +42,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--color-newblue-55);
+  background-color: var(--color-newgreen-65);
 
 }
 
@@ -51,7 +51,6 @@ h2{
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--color-green-200);
-
 }
 
 nav {
@@ -70,20 +69,20 @@ ul {
 }
 
 .logo {
-  width: 200px;
+  width: 180px;
   height: 170px;
   position: absolute;
   top: -40px;
   left: 45px;
 }
-
+/* 
 .logo:hover{
   background-color: var(--color-newblue-60);
   top: -40px;
   position: unset;
   height: 170px;
 
-}
+} */
 nav ul {
   float: right;
   margin-right: 20px;

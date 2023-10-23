@@ -23,8 +23,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
-      <li><a class="PE" href="#">Planta da Escola</a></li>
-      <li><a class="HR" href="#">Horários</a></li>
+      <li><a class="HR" href="horarios.php">Horários</a></li>
       <li><a class="CP" href="#">Contato dos Professores</a></li>
       <li><a class="IS" href="#">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
@@ -54,7 +53,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
         <h1>Horários</h1>
         <div class="content">
           <p>Com sua grade curricular sempre em mãos, é mais facil se manter atualizado das mudanças no horário de aulas. <br><br><br></p>
-          <a href="#">Ver Horários</a>
+          <a href="horarios.php">Ver Horários</a>
         </div>
 
       </div>
@@ -98,7 +97,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
       </div>
 
       <div class="navicones">
-        <a href="#"><ion-icon name="time-outline"></ion-icon>
+        <a href="horarios.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>

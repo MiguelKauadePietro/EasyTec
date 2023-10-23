@@ -36,6 +36,9 @@
                             <a class="nav-link active"  href="telaadmin2.php">Promover Admin</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link"  href="telaadmin3.php">Rebaixar Admin</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="logoutadm.php">Sair</a>
                         </li>
                     </ul>
@@ -52,7 +55,7 @@
       <th scope="col">Nome</th>
       <th scope="col">Tipo</th>
       <th scope="col">Função</th>
-      <th scope="col">Ativar/Desativar</th>
+      <th scope="col">Rebaixar/Promover</th>
     </tr>
   </thead>
   <tbody>
@@ -77,7 +80,7 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['funcao'] . '</td>
         <td>
-          <a class="btn btn-danger" href="mudarfuncao.php?RM=' . $usuario['RM'] . '&funcao=adm">Promover</a>
+          <a class="btn btn-primary" href="mudarfuncao.php?RM=' . $usuario['RM'] . '&funcao=adm">Promover</a>
        
       </td>
       </tr>';

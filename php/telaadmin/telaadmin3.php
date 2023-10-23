@@ -27,16 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="telaadmin.php">Ativar Usuários</a>
+                            <a class="nav-link" aria-current="page" href="telaadmin.php">Ativar Usuários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="telaadmin1.php">Desativar Usuários</a>
+                            <a class="nav-link"  href="telaadmin1.php">Desativar Usuários</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"  href="telaadmin2.php">Promover Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="telaadmin3.php">Rebaixar Admin</a>
+                            <a class="nav-link active"  href="telaadmin3.php">Rebaixar Admin</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logoutadm.php">Sair</a>
@@ -65,7 +65,7 @@
     include_once("conexao.php");
 
     //Comando SQL para buscar os usuários inativos
-    $stmt = "select * from usuarios where tipo = 'n';";
+    $stmt = "select * from usuarios where tipo = 's' and funcao = 'adm';";
 
     //Executando o comando SQL
     $resultado = mysqli_query($conn, $stmt);
@@ -80,14 +80,14 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['funcao'] . '</td>
         <td>
-          <a class="btn btn-primary" href="mudarstatus.php?RM=' . $usuario['RM'] . '&tipo=s">Ativar</a>
+          <a class="btn btn-danger" href="mudarfuncao.php?RM=' . $usuario['RM'] . '&funcao=alu">Rebaixar</a>
        
       </td>
       </tr>';
         }
 
     } else {
-        echo "<tr><td colspan = '5'>Nenhum usuários inativo encontrado</td></tr>";
+        echo "<tr><td colspan = '5'>Nenhum usuários ativo encontrado</td></tr>";
     }
 
     //Fechando o BD

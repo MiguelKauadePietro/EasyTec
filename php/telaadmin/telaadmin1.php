@@ -36,6 +36,9 @@
                             <a class="nav-link"  href="telaadmin2.php">Promover Admin</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link"  href="telaadmin3.php">Rebaixar Admin</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="logoutadm.php">Sair</a>
                         </li>
                     </ul>
