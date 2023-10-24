@@ -102,6 +102,10 @@
     border-radius: 5px;
 }
 
+.dark#form_header h1::before{
+    background: var(--color-green-200);
+  }
+
 #mode_icon {
     cursor: pointer;
     font-size: 20px;
@@ -148,17 +152,6 @@
     outline: none;
 }
 
-/* Forgot password */
-#forgot_password a {
-    text-decoration: none;
-    color: var(--color-dark-50);
-    font-size: 12px;
-}
-
-#forgot_password a:hover {
-    color: var(--color-blue-50);
-}
-
 /* Login Button */
 #login_button {
     border: none;
@@ -202,45 +195,13 @@
 
 }
 
-
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
     background-color: transparent;
 }
 
-/* Estilos para o seletor */
-.custom-select {
-    position: relative;
-    font-family: Arial, sans-serif;
+  .dark#login_form .input-field::before{
+    color: var(--color-green-200);
   }
-  
-  /* Estilos para a seta do seletor */
-  .custom-select::after {
-    content: "\f0d7"; /* Ícone de seta para baixo (FontAwesome) */
-    font-family: FontAwesome;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-  
-  /* Estilos para o seletor real */
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px 30px 5px 10px;
-    width: 200px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para as opções */
-  option {
-    font-size: 16px;
-  }
+

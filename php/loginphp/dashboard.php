@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
   exit();
 }
 
-$usuarioNome =  $_SESSION['usuario_Nome'];
+$usuarioNome = $_SESSION['usuario_Nome'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,6 +14,7 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../CSS/paginainicial.css">
+  <link rel="stylesheet" href="../../CSS/navresponsiva.css">
   <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
   <title>Página Inicial</title>
 </head>
@@ -80,52 +81,53 @@ $usuarioNome =  $_SESSION['usuario_Nome'];
       </div>
     </div>
   </main>
+</header>
 
- <!--nav responsiva na parte inferior-->
-  <div class="navbar">
-  <div class="navicones foco">
+    <!-- <footer>
+        &copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
+    </footer> -->
+
+<!-- nav-responsiva parte inferior -->
+    <div class="responsive-nav">
+  <div   <div class="page-menus">
         <a href="dashboard.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="#"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="horarios.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="#"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="infosecretaria.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>
           <h1>Sair</h1>
         </a>
       </div>
     </div>
       </div>
-    <!--nav responsiva na parte inferior-->
-</header>
+      <!-- nav-responsiva parte inferior -->
 
-    <footer>
-        &copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
-    </footer>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

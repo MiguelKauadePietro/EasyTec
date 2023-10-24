@@ -75,14 +75,6 @@ ul {
   top: -40px;
   left: 45px;
 }
-/* 
-.logo:hover{
-  background-color: var(--color-newblue-60);
-  top: -40px;
-  position: unset;
-  height: 170px;
-
-} */
 nav ul {
   float: right;
   margin-right: 20px;
@@ -116,50 +108,16 @@ a:hover {
 }
 /*------------- responsive ---------------*/
 
-@media (max-width: 952px) {
-  img {
-    padding-left: 50px;
+@media (max-width: 960px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    
   }
 
   ul li a{ 
         display: none;
 }
-
-        /*--- nav responsiva --- */
-
-        .navbar {
-          background-color: #333; /* Cor de fundo da navbar */
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-      }
-      
-      .navbar ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: space-around;
-      }
-      
-      .navbar li {
-          margin: 10px;
-      }
-      
-      .navbar a {
-          text-decoration: none;
-          color: white; /* Cor do texto dos links */
-          font-weight: bold;
-      }
-      
-      /* Estilo para o link ativo */
-      .navbar a.active {
-          background-color: #555; /* Cor de fundo para o link ativo */
-          border-radius: 5px; /* Adiciona um pouco de borda arredondada */
-          padding: 5px 10px; /* Espaçamento interno para melhor visualização */
-      }
-
-  /*--- nav responsiva --- */
 
   .container .card{
     flex-direction: column;
@@ -240,8 +198,8 @@ main{
   transition: 0.5s;
   border: 3px solid #00D186;
   box-shadow: 2px 20px 25px  #006aad;
-  scale: 1.1;
-  height: 40vh;
+  scale: 1;
+  height: 50vh;
 }
 
 .container .card a:hover{

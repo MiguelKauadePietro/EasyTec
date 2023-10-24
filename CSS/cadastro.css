@@ -278,3 +278,8 @@ option {
   cursor: pointer;
   font-size: 20px;
 }
+
+.dark select{
+  color: var(--color-green-200);
+  background-color: var(--color-dark-100);
+}

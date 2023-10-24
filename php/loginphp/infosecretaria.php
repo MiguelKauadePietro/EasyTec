@@ -16,6 +16,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/infosecretaria.css">
+    <link rel="stylesheet" href="../../CSS/navresponsiva.css" >
     <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
     <title>Informações da Secretaria</title>
 </head>
@@ -29,7 +30,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       <li><a class="CP" href="#">Contato dos Professores</a></li>
       <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
-
+</ul>
   </nav>
 
   
@@ -48,7 +49,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
     <div class="service-list">
         <h2>Serviços Oferecidos:</h2>
-        <ul>
+        <ul class = "lista-servico">
             <li><strong>Matrículas e Inscrições:</strong> Informações sobre o processo de matrícula e inscrições.</li>
             <li><strong>Atendimento ao Aluno:</strong> Suporte para alunos em questões administrativas.</li>
             <li><strong>Documentação:</strong> Solicitação de documentos acadêmicos e registros.</li>
@@ -59,7 +60,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
     <div class="team">
         <h2>Equipe da Secretaria:</h2>
-        <ul>
+        <ul class="time">
             <li><strong>[Nome do Chefe da Secretaria]:</strong> Chefe da Secretaria</li>
             <li><strong>[Nome do Funcionário 1]:</strong> Atendimento ao Aluno</li>
             <li><strong>[Nome do Funcionário 2]:</strong> Matrículas e Inscrições</li>
@@ -71,49 +72,51 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     
         
 </div>
-
-<div class="navbar">
-  <div class="navicones foco">
+<!-- <footer>
+&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
+</footer> -->
+<!-- nav-responsiva parte inferior -->
+<div class="responsive-nav">
+  <div   <div class="page-menus">
         <a href="dashboard.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="#"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="horarios.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="#"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="infosecretaria.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>
 
-      <div class="navicones">
+        <div class="page-menus">
         <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>
           <h1>Sair</h1>
         </a>
       </div>
     </div>
       </div>
-
-<footer>
-&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
-</footer>
-    
+      <!-- nav-responsiva parte inferior -->
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="navbar.js"></script>
 </html>
