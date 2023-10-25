@@ -65,6 +65,7 @@ ul {
   padding-left: 200px;
   margin-left: 150px;
   
+  
 }
 
 .logo {
@@ -88,12 +89,12 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a:hover {
@@ -114,13 +115,17 @@ a:hover {
     
   }
 
+  footer{
+    display: none;
+  }
+
   ul li a{ 
         display: none;
 }
 
   .container .card{
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 /*------------- responsive ---------------*/
@@ -198,7 +203,7 @@ main{
   border: 3px solid #00D186;
   box-shadow: 2px 20px 25px  #006aad;
   scale: 1;
-  height: 50vh;
+  height: 45vh;
 }
 
 .container .card a:hover{
@@ -214,8 +219,24 @@ main ion-icon{
 }
 
 footer {
-  background: #333;
+  background: var(--color-blue-100);
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+/*estilos do contato dos professores*/
+
+.UL {
+  list-style-type: none;
+  padding: 0;
+}
+
+.LI {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }

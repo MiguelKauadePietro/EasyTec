@@ -65,7 +65,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
         <div class="content">
           <p>No caso de alguma dúvida repentina relacionada a aula, é possível contatar os professores fora do horario de aula. <br>
           </p>
-          <a href="#">Contate os Professores</a>
+          <a href="contatoprof.php">Contate os Professores</a>
         </div>
 
       </div>
@@ -83,9 +83,9 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   </main>
 </header>
 
-    <!-- <footer>
-        &copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
-    </footer> -->
+    <footer>
+        &copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
+    </footer>
 
 <!-- nav-responsiva parte inferior -->
     <div class="responsive-nav">
@@ -108,7 +108,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       </div>
 
         <div class="page-menus">
-        <a href="#"><ion-icon name="people-outline"></ion-icon>
+        <a href="contatoprof.php"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>

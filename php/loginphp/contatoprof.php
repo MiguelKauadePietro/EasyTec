@@ -1,46 +1,46 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['usuario_id'])) {
-  header('Location: login.php');
-  exit();
-}
-
-$usuarioNome = $_SESSION['usuario_Nome'];
-?>
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../CSS/paginainicial.css">
-  <link rel="stylesheet" href="../../CSS/navresponsiva.css">
-  <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
-  <title>Página Inicial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/paginainicial.css">
+    <link rel="stylesheet" href="../../CSS/navresponsiva.css">
+    <title>Document</title>
 </head>
-<body>
 <header>
-  <nav>
+<body>
+
+<nav>
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
-      <li><a class="HR" href="#">Horários</a></li>
-      <li><a class="CP" href="#">Contato dos Professores</a></li>
-      <li><a class="IS" href="#">Informações da Secretaria</a></li>
+      <li><a class="HR" href="horarios.php">Horários</a></li>
+      <li><a class="CP" href="contatoprof.php">Contato dos Professores</a></li>
+      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
-
+</ul>
   </nav>
 
-        
 
+  <h1>Exemplo de Lista Formatada</h1>
+  <ul class="UL">
+    <li class="LI">Item 1</li>
+    <li class="LI">Item 2</li>
+    <li class="LI">Item 3</li>
+    <li class="LI">Item 4</li>
+    <li class="LI">Item 5</li>
+    <li class="LI">Item 6</li>
+    <li class="LI">Item 7</li>
+    <li class="LI">Item 8</li>
+    <li class="LI">Item 9</li>
+    <li class="LI">Item 10</li>
+  </ul>
+  </header>
 
-</header>
-
-<footer>
-&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
-</footer>
+  <footer>
+        &copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
+    </footer>
 
   <!-- nav-responsiva parte inferior -->
   <div class="responsive-nav">
@@ -63,7 +63,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       </div>
 
         <div class="page-menus">
-        <a href="#"><ion-icon name="people-outline"></ion-icon>
+        <a href="contatoprof.php"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
@@ -83,7 +83,4 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       </div>
       <!-- nav-responsiva parte inferior -->
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="navbar.js"></script>
 </html>

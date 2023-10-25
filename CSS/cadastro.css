@@ -101,6 +101,7 @@
   border-radius: 5px;
 }
 
+
 #mode_icon {
   cursor: pointer;
   font-size: 20px;
@@ -118,6 +119,10 @@
 .input-box > label {
   font-size: 14px;
   color: var(--color-dark-50);
+}
+
+.dark label{
+  color: var(--color-light-50);
 }
 
 .input-field {
@@ -215,35 +220,6 @@
   }
 }
 
-
-@keyframes dark-to-light-container {
-  0% {
-    background-color: var(--color-newgradiente);
-  }
-  100.0%{
-    background-color: var(--color-gradient);
-  }
-}
-
-@keyframes light-to-dark-container {
-  0% {
-    background-color: var(--color-gradient);
-  }
-  100.0% {
-    background-color: var(--color-newgradiente);
-  }
-}
-
-.dark#container{
-  animation: light-to-dark-container 0.3s ease-in-out;
-}
-
-/* Estilos para o seletor */
-.custom-select {
-  position: relative;
-  font-family: Arial, sans-serif;
-}
-
 /* Estilos para a seta do seletor */
 .custom-select::after {
   content: "\f0d7"; /* Ícone de seta para baixo (FontAwesome) */
@@ -267,6 +243,7 @@ select {
   width: 200px;
   font-size: 16px;
   cursor: pointer;
+  animation: dark-to-light-background 0.3s ease-in-out;
 }
 
 /* Estilos para as opções */
@@ -282,4 +259,5 @@ option {
 .dark select{
   color: var(--color-green-200);
   background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
 }

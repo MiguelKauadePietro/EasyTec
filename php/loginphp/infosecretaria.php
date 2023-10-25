@@ -27,7 +27,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
       <li><a class="HR" href="horarios.php">Horários</a></li>
-      <li><a class="CP" href="#">Contato dos Professores</a></li>
+      <li><a class="CP" href="contatoprof.php">Contato dos Professores</a></li>
       <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 </ul>
@@ -72,9 +72,9 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     
         
 </div>
-<!-- <footer>
-&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
-</footer> -->
+<footer>
+&copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
+</footer>
 <!-- nav-responsiva parte inferior -->
 <div class="responsive-nav">
   <div   <div class="page-menus">
@@ -96,7 +96,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       </div>
 
         <div class="page-menus">
-        <a href="#"><ion-icon name="people-outline"></ion-icon>
+        <a href="contatoprof.php"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
