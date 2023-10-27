@@ -157,10 +157,11 @@ main{
   height: 390px;
   background-color: #fff;
   margin: 20px;
-  border: 3px solid  #8FD3F7;
+  /* border: 3px solid  #8FD3F7; */
   overflow: hidden;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 0 0 1px rgba(6, 161, 223, 0.6);
 }
 
 

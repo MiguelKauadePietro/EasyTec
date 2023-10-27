@@ -42,6 +42,7 @@
     bottom: 0;
     align-items: center;
     justify-content: space-evenly;
+
   }
 
   .page-menus {
@@ -59,6 +60,7 @@
     font-size: 12px;
     padding: 0 10px;
     color: var(--color-light-50);
+    text-decoration: none;
   }
   .page-menus a ion-icon {
     display: flex;

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
     <link rel="stylesheet" href="../../CSS/paginainicial.css">
     <link rel="stylesheet" href="../../CSS/navresponsiva.css">
-    <title>Document</title>
+    <title>Contato dos Professores</title>
 </head>
 <header>
 <body>
@@ -39,7 +40,7 @@
   </header>
 
   <footer>
-        &copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
+        &copy; 2023 Etec Sylvio de Mattos Carvalho |  Desenvolvido por Miguel Kauã de Pietro
     </footer>
 
   <!-- nav-responsiva parte inferior -->

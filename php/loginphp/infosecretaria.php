@@ -2,13 +2,12 @@
 session_start();
 
 if (!isset($_SESSION['usuario_id'])) {
-    header('Location: login.php');
-    exit();
+  header('Location: login.php');
+  exit();
 }
 
 $usuarioNome = $_SESSION['usuario_Nome'];
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,8 +17,10 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     <link rel="stylesheet" href="../../CSS/infosecretaria.css">
     <link rel="stylesheet" href="../../CSS/navresponsiva.css" >
     <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Informações da Secretaria</title>
 </head>
+<header>
 <body>
 <nav>
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
@@ -33,32 +34,27 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 </ul>
   </nav>
 
-  
-
-<div class="container">
-    <div class="contact-info">
-    <h1>Secretaria da Escola [Nome da Escola]</h1>
+      <h1>Secretaria da Escola [Nome da Escola]</h1>
 
     <p class="msg_boasvindas">Bem-vindo as Informações da secretaria, <?php echo $_SESSION['usuario_Nome']; ?>!</p>
+
+  <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+            <div class="content">
+            <div class="contact-info">
+
 
         <h2>Informações de Contato:</h2>
         <p><strong>Endereço:</strong> [Endereço da escola]</p>
         <p><strong>Telefone:</strong> [Número de telefone da secretaria]</p>
         <p><strong>E-mail:</strong> <a href="mailto:[Endereço de e-mail da secretaria]">[Endereço de e-mail da secretaria]</a></p>
     </div>
-
-    <div class="service-list">
-        <h2>Serviços Oferecidos:</h2>
-        <ul class = "lista-servico">
-            <li><strong>Matrículas e Inscrições:</strong> Informações sobre o processo de matrícula e inscrições.</li>
-            <li><strong>Atendimento ao Aluno:</strong> Suporte para alunos em questões administrativas.</li>
-            <li><strong>Documentação:</strong> Solicitação de documentos acadêmicos e registros.</li>
-            <li><strong>Informações para Pais:</strong> Respostas a perguntas e assistência para pais e responsáveis.</li>
-            <li><strong>Outros Serviços:</strong> Qualquer outro serviço oferecido pela secretaria.</li>
-        </ul>
-    </div>
-
-    <div class="team">
+</div>
+            </div>
+            <div class="slide">
+            <div class="content">
+            <div class="team">
         <h2>Equipe da Secretaria:</h2>
         <ul class="time">
             <li><strong>[Nome do Chefe da Secretaria]:</strong> Chefe da Secretaria</li>
@@ -68,10 +64,29 @@ $usuarioNome = $_SESSION['usuario_Nome'];
             <li><strong>[Nome do Funcionário 4]:</strong> Atendimento aos Pais</li>
         </ul>
     </div>
-
-    
-        
+            </div>
 </div>
+            <div class="slide">
+            <div class="content">
+            <div class="service-list">
+        <h2>Serviços Oferecidos:</h2>
+        <ul class = "lista-servico">
+            <li><strong>Matrículas e Inscrições:</strong> Informações sobre o processo de matrícula e inscrições.</li>
+            <li><strong>Atendimento ao Aluno:</strong> Suporte para alunos em questões administrativas.</li>
+            <li><strong>Documentação:</strong> Solicitação de documentos acadêmicos e registros.</li>
+            <li><strong>Informações para Pais:</strong> Respostas a perguntas e assistência para pais e responsáveis.</li>
+            <li><strong>Outros Serviços:</strong> Qualquer outro serviço oferecido pela secretaria.</li>
+        </ul>
+    </div>
+            </div>
+</div>
+        </div>
+        <button class="btn1" id="prevButton">Anterior</button>
+        <button class="btn2" id="nextButton">Próxima</button>
+    </div>
+
+
+  </header>
 <footer>
 &copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
 </footer>
@@ -119,4 +134,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="navbar.js"></script>
+<script src="carrossel.js"></script>
+
 </html>
