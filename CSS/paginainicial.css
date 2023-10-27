@@ -42,6 +42,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-dark-100);
 
 }
 
@@ -59,6 +60,7 @@ nav {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  text-decoration: none;
 }
 
 ul {
@@ -78,6 +80,7 @@ ul {
 nav ul {
   float: right;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -97,7 +100,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-a:hover {
+nav ul li a:hover {
   color: #99d8ff;
   background-color: #004e80;
   transition: 0.5s;
@@ -127,6 +130,7 @@ a:hover {
     flex-direction: column;
     margin-bottom: 50px;
   }
+
 }
 /*------------- responsive ---------------*/
 

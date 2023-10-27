@@ -14,6 +14,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../CSS/horarios.css">
   <link rel="stylesheet" href="../../CSS/paginainicial.css">
   <link rel="stylesheet" href="../../CSS/navresponsiva.css">
   <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
@@ -24,16 +25,21 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   <nav>
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
-      <li><a class="HM" href="dashboard.php">Home</a></li>
+    <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
-      <li><a class="HR" href="#">Horários</a></li>
-      <li><a class="CP" href="#">Contato dos Professores</a></li>
-      <li><a class="IS" href="#">Informações da Secretaria</a></li>
+      <li><a class="HR" href="horarios.php">Horários</a></li>
+      <li><a class="CP" href="contatoprof.php">Contato dos Professores</a></li>
+      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
-
   </nav>
-
-        
+        <div class="container">
+        <img src="../../imagens/3A2-ladoA.png">
+        <img src="../../imagens/3A2-ladoB.png">
+        <img src="../../imagens/3B1-ladoA.png">
+        <img src="../../imagens/3B1-ladoB.png">
+        <img src="../../imagens/3B3-ladoA.png">
+        <img src="../../imagens/3B3-ladoB.png">
+        </div>
 
 
 </header>

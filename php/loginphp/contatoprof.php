@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../CSS/contactprof.css">
     <link rel="stylesheet" href="../../CSS/paginainicial.css">
     <link rel="stylesheet" href="../../CSS/navresponsiva.css">
     <title>Contato dos Professores</title>
@@ -22,23 +23,100 @@
       <li><a href="logout.php">Sair</a></li>
 </ul>
   </nav>
+  <br>
+  <h2>Lista de E-mails dos Professores</h2>
+  <br>
+    <table>
+        <tr>
+            <th>Nome do Professor</th>
+            <th>E-mail</th>
+         
+        </tr>
+        <tr>
+            <td>Professor 1</td>
+            <td><a id="emailprof" href="mailto:professor1@example.com">professor1@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 2</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 3</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 4</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 5</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 6</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 7</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 8</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 9</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 10</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 11</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 12</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 13</td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 14</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 15</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 16</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 17</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 18</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 19</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Professor 20</td>
+            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+        </tr>
 
-
-  <h1>Exemplo de Lista Formatada</h1>
-  <ul class="UL">
-    <li class="LI">Item 1</li>
-    <li class="LI">Item 2</li>
-    <li class="LI">Item 3</li>
-    <li class="LI">Item 4</li>
-    <li class="LI">Item 5</li>
-    <li class="LI">Item 6</li>
-    <li class="LI">Item 7</li>
-    <li class="LI">Item 8</li>
-    <li class="LI">Item 9</li>
-    <li class="LI">Item 10</li>
-  </ul>
+        
+    </table>
+    <br>
   </header>
-
   <footer>
         &copy; 2023 Etec Sylvio de Mattos Carvalho |  Desenvolvido por Miguel Kauã de Pietro
     </footer>
@@ -84,4 +162,7 @@
       </div>
       <!-- nav-responsiva parte inferior -->
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="navbar.js"></script>
 </html>

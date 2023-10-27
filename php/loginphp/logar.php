@@ -42,33 +42,7 @@
                         $erro = "Usuário não encontrado";
                     }
                 }
-                    // if (!empty($usuario) && isset($usuario['tipo'])) {
-                    //     if ($usuario['tipo'] == "n") {
-                    //         header("location:load.php");
-                    //     } else if ($usuario['tipo'] == "s") {
-                    //         if (password_verify($senha, $usuario['senha'])) { // Verifica se a senha está correta
-                    //             session_start();
-                    //             $_SESSION['usuario'] = $usuario['nome'];
-                    //             header("location:dashboard.php");
-                    //         }else if ($usuario['funcao'] == "adm") {
-                    //                 $_SESSION['funcao'] = "adm";
-                    //                 header("location: telaadmin.php");
-                    //                 exit; // Importante: encerre o script após o redirecionamento
-                    //             } else if ($usuario['funcao'] == "alu") {
-                    //                 $_SESSION['funcao'] = "alu";
-                                      
-                    //                 exit(); // Importante: encerre o script após o redirecionamento
-                    //             }
-                    //         } else {
-                    //             $erro = "Senha incorreta";
-                    //         }
-                    //     } else {
-                    //         $erro = "Usuário não encontrado";
-                    //     }
-                    // } else {
-                    //     $erro = "Usuário não encontrado";
-                    // }
-                    
+
                    // Se houver erros, redirecione para a página de login com a mensagem de erro
                     if ($erro) {
                         header("location: login.php?erro=" . $erro);

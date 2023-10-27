@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  /* Blues and green */
+  --color-blue-50: #004AAD;
+  --color-blue-100: #006AAD;
+  --color-green-200: #00AD6F;
+  
+    /*Variaveis dark*/
+--color-newblue-75: #193465;
+--color-newblue-60: #25476d;
+--color-newblue-55: #275c79;
+--color-newgreen-65: #286469;
+--color-newgreen-75: #184e52;
+--color-newgreen-100: #143944;
+
+--color-newgradiente: linear-gradient(
+  90deg,
+  var(--color-newblue-60),
+  var(--color-newblue-55),
+  var(--color-newgreen-65),
+
+);
+}
+
+
+body{
+    background-color: var(--color-dark-100);
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    margin-bottom: 40px;
+    right: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    display: inline-block;
+}

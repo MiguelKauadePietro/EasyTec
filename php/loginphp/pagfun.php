@@ -22,11 +22,11 @@ $usuarionome = $_SESSION['usuario_Nome'];
   <nav>
     <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
-      <li><a class="HM" href="dashboard.php">Home</a></li>
+    <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="#">Planta da Escola</a></li>
       <li><a class="HR" href="horarios.php">Horários</a></li>
-      <li><a class="CP" href="#">Contato dos Professores</a></li>
-      <li><a class="IS" href="#">Informações da Secretaria</a></li>
+      <li><a class="CP" href="contatoprof.php">Contato dos Professores</a></li>
+      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 
   </nav>
