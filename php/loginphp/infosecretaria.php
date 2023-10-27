@@ -40,46 +40,107 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
   <div class="carousel-container">
         <div class="carousel">
-            <div class="slide">
-            <div class="content">
+
+        <div class="slide">
+          <div class="content">
             <div class="contact-info">
 
 
-        <h2>Informações de Contato:</h2>
-        <p><strong>Endereço:</strong> [Endereço da escola]</p>
-        <p><strong>Telefone:</strong> [Número de telefone da secretaria]</p>
-        <p><strong>E-mail:</strong> <a href="mailto:[Endereço de e-mail da secretaria]">[Endereço de e-mail da secretaria]</a></p>
-    </div>
-</div>
+                <div class="container_informa">
+                <h2>Informações de Contato:</h2>
+
+                            <div class="info_row">
+                              <h4>Endereço:</h4><p>Endereço da escola</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Telefone:</h4><p>Número de telefone da secretaria</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>E-mail:</h4><p>Endereço de e-mail da secretaria</p>
+                            </div>
+
+                      </div>
+
+            </div>
+          </div>
+        </div>
+            <div class="slide">
+
+              <div class="content">
+
+                <div class="team">
+
+
+                  <div class="time">
+
+                      <div class="container_informa">
+                      <h2>Equipe da Secretaria:</h2>
+              
+                            <div class="info_row">
+                              <h4>Nome do Chefe da Secretaria:</h4><p>Chefe da Secretaria</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Nome do Funcionário 1:</h4><p>Atendimento ao Aluno</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Nome do Funcionário 2:</h4><p>Matrículas e Inscrições</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Nome do Funcionário 3:</h4><p>Documentação</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Nome do Funcionário 4:</h4><p>Atendimento aos Pais</p>
+                            </div>
+
+                      </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
             <div class="slide">
-            <div class="content">
-            <div class="team">
-        <h2>Equipe da Secretaria:</h2>
-        <ul class="time">
-            <li><strong>[Nome do Chefe da Secretaria]:</strong> Chefe da Secretaria</li>
-            <li><strong>[Nome do Funcionário 1]:</strong> Atendimento ao Aluno</li>
-            <li><strong>[Nome do Funcionário 2]:</strong> Matrículas e Inscrições</li>
-            <li><strong>[Nome do Funcionário 3]:</strong> Documentação</li>
-            <li><strong>[Nome do Funcionário 4]:</strong> Atendimento aos Pais</li>
-        </ul>
-    </div>
+              <div class="content">
+                <div class="service-list">
+
+
+                  <div class="container_informa">
+                  <h2>Serviços Oferecidos:</h2>
+
+                            <div class="info_row">
+                              <h4>Matrículas e Inscrições:</h4><p>Informações sobre o processo de matrícula e inscrições.</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Atendimento ao Aluno:</h4><p> Suporte para alunos em questões administrativas.</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Documentação:</h4><p>Solicitação de documentos acadêmicos e registros.</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Informações para Pais</h4><p> Respostas a perguntas e assistência para pais e responsáveis.</p>
+                            </div>
+
+                            <div class="info_row">
+                              <h4>Outros Serviços:</h4><p>Qualquer outro serviço oferecido pela secretaria.</p>
+                            </div>
+
+                      </div>
+
+              </div>
             </div>
-</div>
-            <div class="slide">
-            <div class="content">
-            <div class="service-list">
-        <h2>Serviços Oferecidos:</h2>
-        <ul class = "lista-servico">
-            <li><strong>Matrículas e Inscrições:</strong> Informações sobre o processo de matrícula e inscrições.</li>
-            <li><strong>Atendimento ao Aluno:</strong> Suporte para alunos em questões administrativas.</li>
-            <li><strong>Documentação:</strong> Solicitação de documentos acadêmicos e registros.</li>
-            <li><strong>Informações para Pais:</strong> Respostas a perguntas e assistência para pais e responsáveis.</li>
-            <li><strong>Outros Serviços:</strong> Qualquer outro serviço oferecido pela secretaria.</li>
-        </ul>
-    </div>
-            </div>
-</div>
+          </div>
         </div>
         <button class="btn1" id="prevButton">Anterior</button>
         <button class="btn2" id="nextButton">Próxima</button>
@@ -92,7 +153,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 </footer>
 <!-- nav-responsiva parte inferior -->
 <div class="responsive-nav">
-  <div   <div class="page-menus">
+  <div class="page-menus">
         <a href="dashboard.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
