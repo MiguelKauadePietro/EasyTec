@@ -37,7 +37,7 @@
 body {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    background-color: var(--color-dark-100);
+    background-color: var(--color-dark-50)
 }
 
 table {
@@ -55,17 +55,25 @@ th, td {
     border: 1px solid #ccc;
 }
 
+
+
 th {
     background-color: #007BFF;
     color: #fff;
 }
 
-tr:nth-child(even) {
+tr {
     background-color: #f2f2f2;
 }
 
 tr:hover {
     background-color: #ddd;
+}
+
+#emailprof{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #004AAD;
 }
 
 @media (max-width: 768px) {

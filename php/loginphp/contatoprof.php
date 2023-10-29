@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+  header('Location: login.php');
+  exit();
+}
+
+$usuarioNome = $_SESSION['usuario_Nome'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +35,7 @@
 </ul>
   </nav>
   <br>
-  <h2>Lista de E-mails dos Professores</h2>
+  <h2>Contato dos Professores</h2>
   <br>
     <table>
         <tr>
@@ -34,83 +45,83 @@
         </tr>
         <tr>
             <td>Professor 1</td>
-            <td><a id="emailprof" href="mailto:professor1@example.com">professor1@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor1@example.com">professor1@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 2</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 3</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor3@example.com">professor3@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 4</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor4@example.com">professor4@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 5</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor5@example.com">professor5@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 6</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor6@example.com">professor6@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 7</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor7@example.com">professor7@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 8</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor8@example.com">professor8@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 9</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor9@example.com">professor9@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 10</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor10@example.com">professor10@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 11</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor11@example.com">professor11@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 12</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor12@example.com">professor12@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 13</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor13@example.com">professor13@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 14</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor14@example.com">professor14@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 15</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor15@example.com">professor15@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 16</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor16@example.com">professor16@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 17</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor17@example.com">professor17@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 18</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor18@example.com">professor18@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 19</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor19@example.com">professor19@exemplo.com</a></td>
         </tr>
         <tr>
             <td>Professor 20</td>
-            <td><a href="mailto:professor2@example.com">professor2@example.com</a></td>
+            <td><a id="emailprof" href="mailto:professor20@example.com">professor20@exemplo.com</a></td>
         </tr>
 
         
