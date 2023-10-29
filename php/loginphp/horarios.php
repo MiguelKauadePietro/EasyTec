@@ -45,7 +45,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 </header>
 
 <footer>
-&copy; 2023 Escola [Nome da Escola] | Desenvolvido por [Seu Nome]
+&copy; 2023 Etec Sylvio de Mattos Carvalho |  Desenvolvido por Miguel Kauã de Pietro
 </footer>
 
   <!-- nav-responsiva parte inferior -->

@@ -51,6 +51,7 @@ h2{
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--color-green-200);
+  margin-top: 30px;
 }
 
 nav {
@@ -97,7 +98,8 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bolder;
+  right: 40px;
 }
 
 nav ul li a:hover {
@@ -131,6 +133,21 @@ nav ul li a:hover {
     margin-bottom: 50px;
   }
 
+  .carousel-container {
+    width: 100%;
+}
+
+}
+
+
+@media (max-width: 1200px) {
+  nav ul li a{
+    right: 50px;
+  }
+
+  .carousel-container {
+    width: 90%;
+}
 }
 /*------------- responsive ---------------*/
 
@@ -207,8 +224,8 @@ main{
   transition: 0.5s;
   border: 3px solid #00D186;
   box-shadow: 2px 20px 25px  #006aad;
-  scale: 1;
-  height: 45vh;
+  scale: 1.1;
+  /* height: 45vh; */
 }
 
 .container .card a:hover{
@@ -245,3 +262,32 @@ footer {
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/*Carrossel*/
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+/*Carrossel*/

@@ -33,6 +33,23 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   </nav>
 
   <h2>Bem-vindo, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
+
+  <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="../../imagens/Etec.jpeg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="imagem3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+        <button id="prevButton">Anterior</button>
+        <button id="nextButton">Próxima</button>
+    </div>
+
   <main>
     <div class="container">
       <!--Primeiro Card-->
@@ -132,4 +149,5 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="navbar.js"></script>
+<script src="carrossel2.js"></script>
 </html>

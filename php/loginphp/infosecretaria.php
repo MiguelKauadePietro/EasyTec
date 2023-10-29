@@ -132,10 +132,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
                               <h4>Informações para Pais</h4><p> Respostas a perguntas e assistência para pais e responsáveis.</p>
                             </div>
 
-                            <div class="info_row">
-                              <h4>Outros Serviços:</h4><p>Qualquer outro serviço oferecido pela secretaria.</p>
-                            </div>
-
                       </div>
 
               </div>

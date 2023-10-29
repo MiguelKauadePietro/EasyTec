@@ -55,7 +55,7 @@
       <th scope="col">Nome</th>
       <th scope="col">Tipo</th>
       <th scope="col">Função</th>
-      <th scope="col">Ativar/Desativar</th>
+      <th scope="col">Rebaixar/Promover</th>
     </tr>
   </thead>
   <tbody>

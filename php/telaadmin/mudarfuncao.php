@@ -20,7 +20,7 @@ mysqli_query($conn,$stmt);
 //     echo "<p>Erro ao ativar usuário</p>";
 //     echo "<p><a href='telaadmin.php'>Voltar</a></p>";
 // }
-header("location: telaadmin.php");
+header("location: telaadmin2.php");
 
 mysqli_close($conn);
 ?>
