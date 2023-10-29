@@ -15,6 +15,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../CSS/paginainicial.css">
   <link rel="stylesheet" href="../../CSS/navresponsiva.css">
+  <link rel="stylesheet" href="../../CSS/slide.css">
   <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
   <title>Página Inicial</title>
 </head>
@@ -32,25 +33,58 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
   </nav>
 
+
+  <section class="slider" >
+          <div class="slider-content" id="verifica">
+            <input type="radio" name="btn-radio" id="radio1" />
+            <input type="radio" name="btn-radio" id="radio2" />
+            <input type="radio" name="btn-radio" id="radio3" />
+
+            <div class="slide-box primeiro">
+              <img
+                class="img-desktop"
+                src="../../imagens/um.jpg"
+                alt="slide 1"
+              />
+             
+            </div>
+
+            <div class="slide-box">
+              <img
+                class="img-desktop"
+                src="../../imagens/dois.jpg"
+                alt="slide 1"
+              />
+        
+            </div>
+
+            <div class="slide-box">
+              <img
+                class="img-desktop"
+                src="../../imagens/tres.jpg"
+                alt="slide 1"
+              />
+             
+            </div>
+
+            <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </section> 
+
   <h2>Bem-vindo, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
 
-  <div class="carousel-container">
-        <div class="carousel">
-            <div class="slide">
-                <img src="../../imagens/Etec.jpeg" alt="Imagem 1">
-            </div>
-            <div class="slide">
-                <img src="imagem2.jpg" alt="Imagem 2">
-            </div>
-            <div class="slide">
-                <img src="imagem3.jpg" alt="Imagem 3">
-            </div>
-        </div>
-        <button id="prevButton">Anterior</button>
-        <button id="nextButton">Próxima</button>
-    </div>
 
-  <main>
+  <main> 
     <div class="container">
       <!--Primeiro Card-->
       <div class="card" id="card1">
@@ -149,5 +183,5 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="navbar.js"></script>
-<script src="carrossel2.js"></script>
+<script src="slide.js"></script>
 </html>
