@@ -33,55 +33,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
   </nav>
 
-
-  <section class="slider" >
-          <div class="slider-content" id="verifica">
-            <input type="radio" name="btn-radio" id="radio1" />
-            <input type="radio" name="btn-radio" id="radio2" />
-            <input type="radio" name="btn-radio" id="radio3" />
-
-            <div class="slide-box primeiro">
-              <img
-                class="img-desktop"
-                src="../../imagens/um.jpg"
-                alt="slide 1"
-              />
-             
-            </div>
-
-            <div class="slide-box">
-              <img
-                class="img-desktop"
-                src="../../imagens/dois.jpg"
-                alt="slide 1"
-              />
-        
-            </div>
-
-            <div class="slide-box">
-              <img
-                class="img-desktop"
-                src="../../imagens/tres.jpg"
-                alt="slide 1"
-              />
-             
-            </div>
-
-            <div class="nav-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-              <label for="radio1" class="manual-btn"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
-            </div>
-          </div>
-        </section> 
-
-  <h2>Bem-vindo, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
+  <h2>Seja bem-vindo à Página Inicial, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
 
 
   <main> 

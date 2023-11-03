@@ -41,8 +41,8 @@ body {
 }
 
 table {
-    width: 100%;
-    max-width: 600px;
+    width: 90%;
+    /* max-width: 600px; */
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid #ccc;

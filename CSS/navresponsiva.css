@@ -16,6 +16,10 @@
     --color-green-200: #00AD6F; 
 }
 
+*{
+  text-decoration: none;
+}
+
 .responsive-nav{
     display: none;
 }
@@ -27,6 +31,7 @@
   .navbar{
     height: 50px;
     background-color: var(--color-blue-100) ;
+    text-decoration: none;
   }
 
   .menu-cadastro {
@@ -42,6 +47,7 @@
     bottom: 0;
     align-items: center;
     justify-content: space-evenly;
+    text-decoration: none;
 
   }
 
@@ -54,6 +60,7 @@
     height: 60px;
     width: 40px;
     transition: 1s;
+    text-decoration: none;
   }
   .page-menus h1 {
     /* display: none; */

@@ -34,8 +34,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 </ul>
   </nav>
 
-      <h1>Secretaria da Escola [Nome da Escola]</h1>
-
     <p class="msg_boasvindas">Bem-vindo as Informações da secretaria, <?php echo $_SESSION['usuario_Nome']; ?>!</p>
 
   <div class="carousel-container">

@@ -47,7 +47,8 @@ body {
 }
 
 h2{
-  margin-left: 50px;
+  margin-left: 10px;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--color-green-200);
@@ -262,32 +263,3 @@ footer {
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-/*Carrossel*/
-
-.carousel-container {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel {
-  display: flex;
-  overflow: hidden;
-}
-
-.slide {
-  flex: 0 0 100%;
-  transition: transform 0.5s;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-}
-
-button {
-  margin-top: 10px;
-  cursor: pointer;
-}
-/*Carrossel*/
