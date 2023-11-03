@@ -31,6 +31,7 @@
 
 
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                if(!empty($_POST['Nome'])) {
                 $nome = $_POST['Nome'];
                 $RM = $_POST['RM'];
                 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
@@ -43,12 +44,11 @@
                 if (mysqli_query($conexao, $sql)) {
                     echo "Cadastro realizado com sucesso!";
 
-                    //quando o cadastro for realizado, o usuário será encaminhado para a tela de login
-                    // header("location:../loginphp/login.php");
 
                 } else {
                     echo "Erro ao cadastrar: " . mysqli_error($conexao);
                 }
+            }
             }
             ?>
             <!-- INPUTS -->
