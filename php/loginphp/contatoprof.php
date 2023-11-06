@@ -36,6 +36,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   </nav>
   <br>
   <h2>Contato dos Professores</h2>
+  <h2>Seja bem-vindo ao Contato dos Professores, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
   <br>
     <table>
         <tr>

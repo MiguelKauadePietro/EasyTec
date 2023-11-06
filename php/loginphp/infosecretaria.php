@@ -76,9 +76,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
                       <div class="container_informa">
                       <h2>Equipe da Secretaria:</h2>
               
-                            <div class="info_row">
-                              <h4>Nome do Chefe da Secretaria:</h4><p>Chefe da Secretaria</p>
-                            </div>
 
                             <div class="info_row">
                               <h4>Nome do Funcionário 1:</h4><p>Atendimento ao Aluno</p>
@@ -90,10 +87,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
                             <div class="info_row">
                               <h4>Nome do Funcionário 3:</h4><p>Documentação</p>
-                            </div>
-
-                            <div class="info_row">
-                              <h4>Nome do Funcionário 4:</h4><p>Atendimento aos Pais</p>
                             </div>
 
                       </div>
@@ -123,11 +116,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
                             </div>
 
                             <div class="info_row">
-                              <h4>Documentação:</h4><p>Solicitação de documentos acadêmicos e registros.</p>
-                            </div>
-
-                            <div class="info_row">
-                              <h4>Informações para Pais</h4><p> Respostas a perguntas e assistência para pais e responsáveis.</p>
+                              <h4>Informações aos Pais</h4><p> Respostas e assistência aos pais e responsáveis.</p>
                             </div>
 
                       </div>
