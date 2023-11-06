@@ -80,7 +80,7 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['funcao'] . '</td>
         <td>
-          <a class="btn btn-danger" href="mudarfuncao.php?RM=' . $usuario['RM'] . '&funcao=alu">Rebaixar</a>
+          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=alu">Rebaixar</a>
        
       </td>
       </tr>';
