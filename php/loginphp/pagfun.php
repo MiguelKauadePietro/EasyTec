@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['usuario_id'])) {
+if (!isset($_SESSION['usuario_id']) || $_SESSION['funcao'] != "fun") {
   header('Location: login.php');
   exit();
 }

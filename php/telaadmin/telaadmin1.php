@@ -16,7 +16,7 @@
     include_once("validaradm.php");
     ?>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" href="telaadmin.php">ADM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </nav>
-        <div>
+        <div class="table table-bordered">
         <table class="table table-striped">
   <thead>
     <tr>
@@ -98,6 +98,7 @@
 </table>
 
         </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
