@@ -23,13 +23,13 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <header>
 <body>
 <nav>
-    <a href="dashboard.php "> <img class="logo" src="../../imagens/logob.png"></a>
+    <a href="dashboard.php"> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
-    <li><a class="HM" href="dashboard.php">Home</a></li>
-      <li><a class="PE" href="plantaescola.php">Planta da Escola</a></li>
-      <li><a class="HR" href="horarios.php">Horários</a></li>
-      <li><a class="CP" href="contatoprof.php">Contato dos Professores</a></li>
-      <li><a class="IS" href="infosecretaria.php">Informações da Secretaria</a></li>
+      <li><a class="HM" href="dashboard.php">Home</a></li>
+      <li><a class="PE" href="plantaescolater">Planta da Escola</a></li>
+      <li><a class="HR" href="horarioster.php">Horários</a></li>
+      <li><a class="CP" href="contatoprofTer.php">Contato dos Professores</a></li>
+      <li><a class="IS" href="infosecretariater.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 </ul>
   </nav>
@@ -134,34 +134,34 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <footer>
 &copy; 2023 Etec Sylvio de Mattos Carvalho | Desenvolvido por Miguel Kauã de Pietro
 </footer>
-<!-- nav-responsiva parte inferior -->
-<div class="responsive-nav">
-  <div class="page-menus">
-        <a href="dashboard.php"><ion-icon name="home"></ion-icon>
+  <!-- nav-responsiva parte inferior -->
+  <div class="responsive-nav">
+  <div   <div class="page-menus">
+        <a href="pagter.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="plantaescola.php"><ion-icon name="navigate-outline"></ion-icon>
+        <a href="plantaescolater"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="horarios.php"><ion-icon name="time-outline"></ion-icon>
+        <a href="horarioster.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="contatoprof.php"><ion-icon name="people-outline"></ion-icon>
+        <a href="contatoprofTer.php"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="infosecretaria.php"><ion-icon name="information-outline"></ion-icon>
+        <a href="infosecretariater.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>
