@@ -65,7 +65,7 @@
     include_once("conexao.php");
 
     //Comando SQL para buscar os usuários inativos
-    $stmt = "select * from usuarios where tipo = 's' and funcao = 'adm';";
+    $stmt = "select * from usuarios where tipo = 's' and funcao = 'adm' and id <> ".$_SESSION['usuario_id'].";";
 
     //Executando o comando SQL
     $resultado = mysqli_query($conn, $stmt);
@@ -80,7 +80,10 @@
         <td>' . $usuario['tipo'] . '</td>
         <td>' . $usuario['funcao'] . '</td>
         <td>
-          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=alu">Rebaixar</a>
+          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=pro">Professor</a>
+          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=alu">Aluno</a>
+          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=fun">Funcionário</a>
+          <a class="btn btn-danger" href="mudarfuncao2.php?RM=' . $usuario['RM'] . '&funcao=ter">Tercerizado</a>
        
       </td>
       </tr>';

@@ -29,8 +29,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       <li><a class="HM" href="dashboard.php">Home</a></li>
       <li><a class="PE" href="plantaescolater">Planta da Escola</a></li>
       <li><a class="HR" href="horarioster.php">Horários</a></li>
-      <li><a class="CP" href="contatoprofTer.php">Contato dos Professores</a></li>
-      <li><a class="IS" href="infosecretariater.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 </ul>
   </nav>
@@ -453,17 +451,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
         </a>
       </div>
 
-        <div class="page-menus">
-        <a href="contatoprofTer.php"><ion-icon name="people-outline"></ion-icon>
-          <h1>Contat</h1>
-        </a>
-      </div>
-
-        <div class="page-menus">
-        <a href="infosecretariater.php"><ion-icon name="information-outline"></ion-icon>
-          <h1>Info</h1>
-        </a>
-      </div>
 
         <div class="page-menus">
         <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>

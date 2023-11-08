@@ -65,7 +65,7 @@
     include_once("conexao.php");
 
     //Comando SQL para buscar os usuários inativos
-    $stmt = "select * from usuarios where tipo = 's' and funcao = 'alu';";
+    $stmt = "select * from usuarios where tipo = 's';";
 
     //Executando o comando SQL
     $resultado = mysqli_query($conn, $stmt);

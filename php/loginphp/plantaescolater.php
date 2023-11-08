@@ -25,10 +25,8 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     <a href="dashboard.php"> <img class="logo" src="../../imagens/logob.png"></a>
     <ul>
       <li><a class="HM" href="dashboard.php">Home</a></li>
-      <li><a class="PE" href="plantaescolater">Planta da Escola</a></li>
+      <li><a class="PE" href="plantaescolater.php">Planta da Escola</a></li>
       <li><a class="HR" href="horarioster.php">Horários</a></li>
-      <li><a class="CP" href="contatoprofTer.php">Contato dos Professores</a></li>
-      <li><a class="IS" href="infosecretariater.php">Informações da Secretaria</a></li>
       <li><a href="logout.php">Sair</a></li>
 </ul>
   </nav>
@@ -59,7 +57,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       </div>
 
         <div class="page-menus">
-        <a href="plantaescolater"><ion-icon name="navigate-outline"></ion-icon>
+        <a href="plantaescolater.php"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
@@ -67,18 +65,6 @@ $usuarioNome = $_SESSION['usuario_Nome'];
         <div class="page-menus">
         <a href="horarioster.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
-        </a>
-      </div>
-
-        <div class="page-menus">
-        <a href="contatoprofTer.php"><ion-icon name="people-outline"></ion-icon>
-          <h1>Contat</h1>
-        </a>
-      </div>
-
-        <div class="page-menus">
-        <a href="infosecretariater.php"><ion-icon name="information-outline"></ion-icon>
-          <h1>Info</h1>
         </a>
       </div>
 

@@ -4,7 +4,6 @@ $funcao = $_GET['funcao'];
 
 include_once("conexao.php");
 
-//$ativo = ($tipo == "s") ? "s" : "n"; // Defina $ativo com base em $tipo
 
 $stmt = "update usuarios set funcao = '$funcao' where RM = '$RM';";
 

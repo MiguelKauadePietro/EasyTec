@@ -75,7 +75,7 @@ $usuarionome = $_SESSION['usuario_Nome'];
       </div>
 
         <div class="page-menus">
-        <a href="plantaescolater"><ion-icon name="navigate-outline"></ion-icon>
+        <a href="plantaescolater.php"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
@@ -86,17 +86,6 @@ $usuarionome = $_SESSION['usuario_Nome'];
         </a>
       </div>
 
-        <div class="page-menus">
-        <a href="contatoprofTer.php"><ion-icon name="people-outline"></ion-icon>
-          <h1>Contat</h1>
-        </a>
-      </div>
-
-        <div class="page-menus">
-        <a href="infosecretariater.php"><ion-icon name="information-outline"></ion-icon>
-          <h1>Info</h1>
-        </a>
-      </div>
 
         <div class="page-menus">
         <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>

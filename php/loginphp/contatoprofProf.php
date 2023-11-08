@@ -38,95 +38,43 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   <h2>Contato dos Professores</h2>
   <h2>Seja bem-vindo ao Contato dos Professores, Professor(a) <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
   <br>
-    <table>
-        <tr>
-            <th>Nome do Professor</th>
-            <th>E-mail</th>
-         
-        </tr>
-        <tr>
-            <td>Professor 1</td>
-            <td><a id="emailprof" href="mailto:professor1@example.com">professor1@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 2</td>
-            <td><a id="emailprof" href="mailto:professor2@example.com">professor2@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 3</td>
-            <td><a id="emailprof" href="mailto:professor3@example.com">professor3@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 4</td>
-            <td><a id="emailprof" href="mailto:professor4@example.com">professor4@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 5</td>
-            <td><a id="emailprof" href="mailto:professor5@example.com">professor5@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 6</td>
-            <td><a id="emailprof" href="mailto:professor6@example.com">professor6@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 7</td>
-            <td><a id="emailprof" href="mailto:professor7@example.com">professor7@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 8</td>
-            <td><a id="emailprof" href="mailto:professor8@example.com">professor8@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 9</td>
-            <td><a id="emailprof" href="mailto:professor9@example.com">professor9@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 10</td>
-            <td><a id="emailprof" href="mailto:professor10@example.com">professor10@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 11</td>
-            <td><a id="emailprof" href="mailto:professor11@example.com">professor11@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 12</td>
-            <td><a id="emailprof" href="mailto:professor12@example.com">professor12@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 13</td>
-            <td><a id="emailprof" href="mailto:professor13@example.com">professor13@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 14</td>
-            <td><a id="emailprof" href="mailto:professor14@example.com">professor14@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 15</td>
-            <td><a id="emailprof" href="mailto:professor15@example.com">professor15@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 16</td>
-            <td><a id="emailprof" href="mailto:professor16@example.com">professor16@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 17</td>
-            <td><a id="emailprof" href="mailto:professor17@example.com">professor17@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 18</td>
-            <td><a id="emailprof" href="mailto:professor18@example.com">professor18@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 19</td>
-            <td><a id="emailprof" href="mailto:professor19@example.com">professor19@exemplo.com</a></td>
-        </tr>
-        <tr>
-            <td>Professor 20</td>
-            <td><a id="emailprof" href="mailto:professor20@example.com">professor20@exemplo.com</a></td>
-        </tr>
+  <div class="table-responsive">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+    <?php
 
-        
-    </table>
+    //Conexão com o Banco de Dados
+    include_once("conexaologin.php");
+
+    //Comando SQL para buscar os usuários inativos
+    $stmt = "select * from usuarios where funcao = 'pro';";
+
+    //Executando o comando SQL
+    $resultado = mysqli_query($conexao, $stmt);
+
+    //Verificando se from encontrado resultados
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($usuario = mysqli_fetch_assoc($resultado)) {
+            echo
+                '<tr>
+        <th scope="row">' . $usuario['Nome'] . '</th>
+        <td>' . $usuario['Email'] . '</td>
+      </tr>';
+        }
+
+    } else {
+        echo "<tr><td colspan = '5'>Nenhum professor encontrado</td></tr>";
+    }
+
+    //Fechando o BD
+    mysqli_close($conexao);
+
+    ?>
+    </tr>
+  </tbody>
+</table>
+</div>
     <br>
   </header>
   <footer>

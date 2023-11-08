@@ -38,7 +38,43 @@ $usuarioNome = $_SESSION['usuario_Nome'];
   <h2>Contato dos Professores</h2>
   <h2>Seja bem-vindo ao Contato dos Professores, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
   <br>
-    
+  <div class="table-responsive">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+    <?php
+
+    //Conexão com o Banco de Dados
+    include_once("conexaologin.php");
+
+    //Comando SQL para buscar os usuários inativos
+    $stmt = "select * from usuarios where funcao = 'pro';";
+
+    //Executando o comando SQL
+    $resultado = mysqli_query($conexao, $stmt);
+
+    //Verificando se from encontrado resultados
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($usuario = mysqli_fetch_assoc($resultado)) {
+            echo
+                '<tr>
+        <th scope="row">' . $usuario['Nome'] . '</th>
+        <td>' . $usuario['Email'] . '</td>
+      </tr>';
+        }
+
+    } else {
+        echo "<tr><td colspan = '5'>Nenhum professor encontrado</td></tr>";
+    }
+
+    //Fechando o BD
+    mysqli_close($conexao);
+
+    ?>
+    </tr>
+  </tbody>
+</table>
+</div>
     <br>
   </header>
   <footer>
