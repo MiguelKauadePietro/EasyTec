@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2023 at 07:58 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Tempo de geração: 08-Nov-2023 às 16:27
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,51 +18,56 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tcc_db`
+-- Banco de dados: `tcc_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuarios`
+-- Estrutura da tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `Nome` varchar(100) NOT NULL,
+  `Email` varchar(240) NOT NULL,
   `RM` int(5) NOT NULL,
   `senha` varchar(240) NOT NULL,
   `tipo` char(1) NOT NULL,
   `funcao` char(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `usuarios`
+-- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `Nome`, `RM`, `senha`, `tipo`, `funcao`) VALUES
-(29, 'Cristian', 19190, '$2y$10$S2TAfeBNKRuNyCxfczhPHeFTwLP4ukI9U7C7gP4VOHvfVz.ZL/HF2', 's', 'adm'),
-(30, 'Amanda', 32254, '$2y$10$pi45FbI.P1st4PhXVQfyCOea0FCZzuTYQQAKc8OuPb36l04GbXBZy', 's', 'adm');
+INSERT INTO `usuarios` (`id`, `Nome`, `Email`, `RM`, `senha`, `tipo`, `funcao`) VALUES
+(29, 'Cristian', '', 19190, '$2y$10$S2TAfeBNKRuNyCxfczhPHeFTwLP4ukI9U7C7gP4VOHvfVz.ZL/HF2', 's', 'adm'),
+(30, 'Amanda', '', 32254, '$2y$10$pi45FbI.P1st4PhXVQfyCOea0FCZzuTYQQAKc8OuPb36l04GbXBZy', 's', 'adm'),
+(31, 'Miguel Kauã de Pietro', '', 21240, '$2y$10$h0RaF0gYOIappegk1eJ5V.FJ7ek7iH61c5yBVdriULT0F7Dr7ZIg.', 's', 'adm'),
+(34, 'Vanessa', 'vanessaparaninfa@email.com', 58362, '$2y$10$IkW1TP9InBAkUQo4oZnPC.kPjIKQlAW2V89lQq7i/H1h3QM8tO9wC', 's', 'pro'),
+(35, 'Tekinha', 'teka@email.com', 79415, '$2y$10$FD2JH7AyyCTuHt8jvQ9szet.SsvuQDb2y/XYXw3MveWequulvpTX.', 's', 'pro'),
+(36, 'Miguel', '', 12345, '$2y$10$tOWAzPs1.pzLLGATjSOlneBDnByi.AULJEZsgyPLSIPkzHeBSVxsa', 'n', 'alu');
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `usuarios`
+-- Índices para tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `usuarios`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
