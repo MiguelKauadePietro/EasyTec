@@ -1,3 +1,11 @@
 #planta{
     height: 1000px;
 }
+
+@media (max-width: 960px) {
+
+    h3{
+        text-align: center;
+    }
+
+}

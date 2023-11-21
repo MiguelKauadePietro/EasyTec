@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['usuario_id'])) {
-  header('Location: login.php');
+if (!isset($_SESSION['usuario_id']) || $_SESSION['funcao'] != "pro") {
+  header('Location: ../login.php');
   exit();
 }
 
-$usuarioNome = $_SESSION['usuario_Nome'];
+$usuarionome = $_SESSION['usuario_Nome'];
 ?>
 
 <!DOCTYPE html>
@@ -14,29 +14,29 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../imagens/EASYTEC.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../CSS/contactprof.css">
-    <link rel="stylesheet" href="../../CSS/paginainicial.css">
-    <link rel="stylesheet" href="../../CSS/navresponsiva.css">
+    <link rel="shortcut icon" href="../../../imagens/EASYTEC.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../CSS/contactprof.css">
+    <link rel="stylesheet" href="../../../CSS/paginainicial.css">
+    <link rel="stylesheet" href="../../../CSS/navresponsiva.css">
     <title>Contato dos Professores</title>
 </head>
 <header>
 <body>
 
 <nav>
-    <a href="pagfun.php"> <img class="logo" src="../../imagens/logob.png"></a>
+    <a href="pagprof.php"> <img class="logo" src="../../../imagens/logob.png"></a>
     <ul>
-      <li><a class="HM" href="pagfun.php">Home</a></li>
-      <li><a class="PE" href="plantaescolafun">Planta da Escola</a></li>
-      <li><a class="HR" href="horariosfun.php">Horários</a></li>
-      <li><a class="CP" href="contatoprofFun.php">Contato dos Professores</a></li>
-      <li><a class="IS" href="infosecretariafun.php">Informações da Secretaria</a></li>
-      <li><a href="logout.php">Sair</a></li>
+      <li><a class="HM" href="pagprof.php">Home</a></li>
+      <li><a class="PE" href="plantaescolaprof.php">Planta da Escola</a></li>
+      <li><a class="HR" href="horariosprof.php">Horários</a></li>
+      <li><a class="CP" href="contatoprofProf.php">Contato dos Professores</a></li>
+      <li><a class="IS" href="infosecretariaprof.php">Informações da Secretaria</a></li>
+      <li><a href="../logout.php">Sair</a></li>
 </ul>
   </nav>
   <br>
   <h2>Contato dos Professores</h2>
-  <h2>Seja bem-vindo ao Contato dos Professores, <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
+  <h2>Seja bem-vindo ao Contato dos Professores, Professor(a) <?php echo $_SESSION['usuario_Nome']; ?>!</h2>
   <br>
   <div class="table-responsive">
   <table class="table table-striped">
@@ -45,7 +45,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     <?php
 
     //Conexão com o Banco de Dados
-    include_once("conexaologin.php");
+    include_once("../conexaologin.php");
 
     //Comando SQL para buscar os usuários inativos
     $stmt = "select * from usuarios where funcao = 'pro';";
@@ -82,39 +82,39 @@ $usuarioNome = $_SESSION['usuario_Nome'];
     </footer>
 
   <!-- nav-responsiva parte inferior -->
-  <div class="responsive-nav">
-  <div   <div class="page-menus">
-        <a href="pagfun.php"><ion-icon name="home"></ion-icon>
+<div class="responsive-nav">
+  <div class="page-menus">
+        <a href="pagprof.php"><ion-icon name="home"></ion-icon>
           <h1>Home</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="plantaescolafun"><ion-icon name="navigate-outline"></ion-icon>
+        <a href="plantaescolaprof.php"><ion-icon name="navigate-outline"></ion-icon>
           <h1>Planta</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="horariosfun.php"><ion-icon name="time-outline"></ion-icon>
+        <a href="horariosprof.php"><ion-icon name="time-outline"></ion-icon>
           <h1>Horários</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="contatoprofFun.php"><ion-icon name="people-outline"></ion-icon>
+        <a href="contatoprofProf.php"><ion-icon name="people-outline"></ion-icon>
           <h1>Contat</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="infosecretariafun.php"><ion-icon name="information-outline"></ion-icon>
+        <a href="infosecretariaprof.php"><ion-icon name="information-outline"></ion-icon>
           <h1>Info</h1>
         </a>
       </div>
 
         <div class="page-menus">
-        <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>
+        <a href="../logout.php"><ion-icon name="exit-outline"></ion-icon>
           <h1>Sair</h1>
         </a>
       </div>

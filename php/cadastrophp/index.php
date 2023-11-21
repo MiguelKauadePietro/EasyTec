@@ -34,17 +34,15 @@
                 if(!empty($_POST['Nome'])) {
                 $nome = $_POST['Nome'];
                 $RM = $_POST['RM'];
+                //$email = $_POST['email'];
                 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
                 $funcao = $_POST['funcao'];
-                
                 //inserindo os campos
                 $sql = "INSERT INTO usuarios VALUES (null, '$nome', '$RM', '$senha','n','$funcao')";
-                
+
                 //verificando os dados no banco
                 if (mysqli_query($conexao, $sql)) {
                     echo "Cadastro realizado com sucesso!";
-
-
                 } else {
                     echo "Erro ao cadastrar: " . mysqli_error($conexao);
                 }

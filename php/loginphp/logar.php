@@ -23,13 +23,13 @@
                                     header("location:dashboard.php");
                                 } elseif ($usuario['funcao'] == "pro") {
                                     $_SESSION['funcao'] = "pro";
-                                    header("location:pagprof.php"); //colocar a página do professor
+                                    header("location: ./././professores/pagprof.php");
                                 } elseif ($usuario['funcao'] == "fun") {
                                     $_SESSION['funcao'] = "fun";
-                                    header("location:pagfun.php");
+                                    header("location: ./././funcionarios/pagfun.php");
                                 } elseif ($usuario['funcao'] == "ter") {
                                     $_SESSION['funcao'] = "ter";
-                                    header("location:pagter.php");
+                                    header("location: ./././tercerizados/pagter.php");
                                 }
                                 exit();
                             } else {
