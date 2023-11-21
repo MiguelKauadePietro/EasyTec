@@ -27,7 +27,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
       <li><a class="HM" href="pagter.php">Home</a></li>
       <li><a class="PE" href="plantaescolater.php">Planta da Escola</a></li>
       <li><a class="HR" href="horarioster.php">Horários</a></li>
-      <li><a href="logout.php">Sair</a></li>
+      <li><a href="../logout.php">Sair</a></li>
 
   </nav>
 

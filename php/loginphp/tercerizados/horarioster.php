@@ -453,7 +453,7 @@ $usuarioNome = $_SESSION['usuario_Nome'];
 
 
         <div class="page-menus">
-        <a href="logout.php"><ion-icon name="exit-outline"></ion-icon>
+        <a href="../logout.php"><ion-icon name="exit-outline"></ion-icon>
           <h1>Sair</h1>
         </a>
       </div>
